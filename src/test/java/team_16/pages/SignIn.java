@@ -13,6 +13,8 @@ public class SignIn {
     public SignIn() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
+    @FindBy(xpath ="(//*[@class='w-icon-account'])[1]")
+    public WebElement sigInButton;
 
     @FindBy(xpath = "(//input[@name=\"username\"])[1]")
     public WebElement Username_or_email_address;
