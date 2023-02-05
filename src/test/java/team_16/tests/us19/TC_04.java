@@ -1,0 +1,75 @@
+package team_16.tests.us19;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+import team_16.pages.*;
+import team_16.utilities.ConfigReader;
+import team_16.utilities.Driver;
+import team_16.utilities.ReusableMethods;
+
+public class TC_04 {
+
+    @Test
+    public void tc04() throws InterruptedException {
+
+
+
+        Driver.getDriver().get(ConfigReader.getProperty("URL"));
+
+        SignIn signIn = new SignIn();
+        HomePage homePage = new HomePage();
+        Urunler urunler = new Urunler();
+        ShoppingCard shoppingCard = new ShoppingCard();
+        BillingDetails billingDetails = new BillingDetails();
+
+        MyAccount myAccount = new MyAccount();
+        Thread.sleep(2000);
+        homePage.signIn.click();
+
+        signIn.Username_or_email_address.click();
+
+        signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email"), Keys.TAB, ConfigReader.getProperty("sifre"), Keys.ENTER);
+        Thread.sleep(2000);
+        homePage.myAccountSecenegi.click();
+
+
+        ReusableMethods.clickByJS(myAccount.ordersButton);
+
+        Thread.sleep(2000);
+
+        homePage.searchButonu.click();
+        homePage.searchButonu.sendKeys(ConfigReader.getProperty("ilkUrun"), Keys.ENTER);
+
+        ReusableMethods.clickByJS(urunler.urun900);
+
+        ReusableMethods.clickByJS(urunler.addToCard);
+
+        homePage.searchButonu.sendKeys(ConfigReader.getProperty("ikinciUrun"), Keys.ENTER);
+
+        ReusableMethods.clickByJS(urunler.addToCard);
+
+        Thread.sleep(2000);
+        ReusableMethods.clickByJS(homePage.cart);
+
+        ReusableMethods.clickByJS(shoppingCard.checkoutButton);
+
+        ReusableMethods.clickByJS(billingDetails.firstName);
+        billingDetails.firstName.clear();
+        billingDetails.firstName.sendKeys(ConfigReader.getProperty("firstname"),Keys.TAB,
+                ConfigReader.getProperty("surname"),Keys.TAB,ConfigReader.getProperty("companyname"));
+
+
+
+        Select options=new Select(billingDetails.countryRegion);
+        options.selectByValue("GB");
+        // new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).build().perform();
+
+        billingDetails.streetAddress.sendKeys(ConfigReader.getProperty("street"),Keys.TAB,ConfigReader.getProperty("unit"),
+                Keys.TAB,ConfigReader.getProperty("postcode"),Keys.TAB,ConfigReader.getProperty("city"),
+                Keys.TAB,Keys.TAB,ConfigReader.getProperty("phone"),Keys.TAB,ConfigReader.getProperty("email"));
+
+
+
+    }
+}
