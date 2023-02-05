@@ -5,35 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/hacer/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ozlem/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us01/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us02/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us03/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us04/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us05/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us07/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us08/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us09/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us11/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us13/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us14/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us16/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us17/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us18/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us20/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us22/TC_01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/StoreManagerPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/HomePageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us16/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/us16/TC_01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,12 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import team_16.utilities.Driver;
 
-public class HomePage {
+public class StoreManagerPage {
 
-    public  HomePage () {
+    public StoreManagerPage (){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
 
 
 }
