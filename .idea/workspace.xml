@@ -5,10 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/Adresses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/SignUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/VendorRegistration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us11/US_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_10.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2023_21_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2023_21_59__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_02_05_00_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_02_05_00_02__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_4_2023_10_58_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_4_2023_10_58_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/SignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us11/TC_01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/hacer/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us11/TC_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +59,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -33,54 +74,56 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/sehri/IdeaProjects/SeleniumProject/TEAM_16/src/test/java/team_16/tests/us10",
+    "settings.editor.selected.configurable": "project.scopes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sehri\IdeaProjects\SeleniumProject\TEAM_16\src\test\java\team_16\tests\us10" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="team_16.tests.us12" />
+      <recent name="team_16.pages" />
+      <recent name="team_16.tests.us11" />
       <recent name="team_16.tests.us22" />
       <recent name="team_16.tests.us21" />
-      <recent name="team_16.tests.us20" />
-      <recent name="team_16.tests.us19" />
-      <recent name="team_16.tests.us18" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC_04">
-    <configuration name="TC_01.tc01" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TC_02 (1)">
+    <configuration name="TC_01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team_16.tests.us19.*" />
+          <option name="PATTERN" value="team_16.tests.us12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us19" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us19.TC_01" />
-      <option name="METHOD_NAME" value="tc01" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="team_16.tests.us12" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us12.TC_01" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_01.tc04" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC_02 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team_16.tests.us19.*" />
+          <option name="PATTERN" value="team_16.tests.us12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us19" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us19.TC_01" />
-      <option name="METHOD_NAME" value="tc04" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="team_16.tests.us12" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us12.TC_02" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -140,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TC_02 (1)" />
+        <item itemvalue="TestNG.TC_01" />
         <item itemvalue="TestNG.TC_04" />
         <item itemvalue="TestNG.TC_03" />
         <item itemvalue="TestNG.TC_02" />
-        <item itemvalue="TestNG.TC_01.tc01" />
-        <item itemvalue="TestNG.TC_01.tc04" />
       </list>
     </recent_temporary>
   </component>

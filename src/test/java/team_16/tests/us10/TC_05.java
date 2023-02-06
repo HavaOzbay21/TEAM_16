@@ -11,23 +11,22 @@ import team_16.utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class TC_01 {
+public class TC_05 {
     HomePage homePage;
     SignUp signUp;
     VendorRegistration vendorRegistration;
     @Test
     public void TC_01() throws IOException {
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
-        ReusableMethods.waitForPageToLoad(50);
         homePage= new HomePage();
         signUp= new SignUp();
         vendorRegistration= new VendorRegistration();
 
         homePage.registerButton.click();
         signUp.becomeAVendor.click();
-        vendorRegistration.password.sendKeys("sehri");
+        vendorRegistration.password.sendKeys("123456");
         String actualResult= vendorRegistration.passwordStrength.getText();
-        String expectedResult= "Too short";
+        String expectedResult= "Weak";
         Assert.assertEquals(actualResult,expectedResult);
         ReusableMethods.getScreenshot("EkranGoruntusu");
         ReusableMethods.waitFor(3);
