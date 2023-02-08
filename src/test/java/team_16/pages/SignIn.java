@@ -15,11 +15,53 @@ public class SignIn {
     }
 
 
-    @FindBy(xpath ="(//*[@class='w-icon-account'])[1]")
+    @FindBy(xpath ="(//button[text()='Sign In']")
     public WebElement sigInButton;
 
     @FindBy(xpath = "(//input[@name=\"username\"])[1]")
     public WebElement Username_or_email_address;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @FindBy(xpath = "//div[@id='customer_login']")   public WebElement singInSignUpSayfasi;
+ @FindBy(xpath = "//a[@class='nav-link active']")   public WebElement singInSecilimi;
+    @FindBy(xpath = "//input[@id='password']")   public WebElement password;
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
