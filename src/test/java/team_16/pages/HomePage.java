@@ -31,4 +31,9 @@ public class HomePage {
 
 
 
+
+
+    @FindBy (xpath = "//span[text()='Register']")
+    public WebElement registerButton;
+
 }

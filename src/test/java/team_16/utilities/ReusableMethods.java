@@ -249,7 +249,7 @@ public class ReusableMethods {
     }
 
     //    SCROLLINTOVIEWJS
-    public void scrollIntoViewJS(WebElement element) {
+    public static void scrollIntoViewJS(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);", element);
     }
@@ -330,4 +330,5 @@ public class ReusableMethods {
 //        loginPage.passwordBox.sendKeys(password);
 //        loginPage.signIn.click();
 //    }
+
 }

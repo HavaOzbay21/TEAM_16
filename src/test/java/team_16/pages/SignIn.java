@@ -21,6 +21,9 @@ public class SignIn {
     @FindBy(xpath = "(//input[@name=\"username\"])[1]")
     public WebElement Username_or_email_address;
 
+    @FindBy (id = "password")
+    public WebElement password;
+
 
 
 
@@ -50,7 +53,7 @@ public class SignIn {
 
  @FindBy(xpath = "//div[@id='customer_login']")   public WebElement singInSignUpSayfasi;
  @FindBy(xpath = "//a[@class='nav-link active']")   public WebElement singInSecilimi;
-    @FindBy(xpath = "//input[@id='password']")   public WebElement password;
+ @FindBy(xpath = "//input[@id='password']")   public WebElement passwordH;
 
 
 
@@ -63,6 +66,10 @@ public class SignIn {
 
 
 
+
+
+    @FindBy (xpath = "//button[@type='submit']")
+    public WebElement signInButton;
 
 }
 
