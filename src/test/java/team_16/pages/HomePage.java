@@ -26,5 +26,6 @@ public class HomePage {
     @FindBy(xpath = "(//*[@class=\"w-icon-cart\"])[1]")
     public WebElement cart;
 
-
+    @FindBy (xpath = "//span[text()='Register']")
+    public WebElement registerButton;
 }
