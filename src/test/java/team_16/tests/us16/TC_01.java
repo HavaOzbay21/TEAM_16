@@ -1,32 +1,15 @@
 package team_16.tests.us16;
 
+import org.openqa.selenium.Keys;
+import org.testng.annotations.Test;
+import team_16.pages.*;
+import team_16.utilities.ConfigReader;
+import team_16.utilities.Driver;
+import team_16.utilities.ReusableMethods;
+
 public class TC_01 {
-    //Vendor siteye gider
-    //Vendor sag ust kisimdaki "Sign In" e tiklar
-    //Vendor "SIGN IN - SIGN-UP" sayfasini gorur
-    //Vendor "SIGN IN" secenegini secili gorur
-    //Vendor "Username or email address" kismina kayitli emaili girer
-    //Vendor "Password" bolumune sifresini girer
-    //Vendor "SIGN IN" butonuna tiklar
-    //Vendor  acilan sayfada"My Account"a tiklar
-    //Vendor "My Account" sayfasini gorur
-    //Vendor "Store Manager"e tiklar
-    //Vendor "Store Manager" sayfasini gorur
-    //Vendor "Products" segmesinin uzerine gelir
-    //Vendor products'un uzerindeyken gelen  "Add New" segenegine tiklar
-    //Vendor "Add Product"a oldugunu dogrular
-    //Vendor "Simple Product" kutusunda "simple product'u secili gorur
-    //Vendor "Virtual" kutucugunu secer
-    //Vendor "Downloadable" kutucugunu secer
-    //Vendor "ProductTitle" kutusuna ekleyecegi urunun basligini yazar
-    //Vendor "Price($)" kutusuna urunun fiyatini yazar
-    //Vendor "Sale Price($)" kutusuna urunun indirimli fiyatini yazar
-    //Vendor "Short Description" kutusuna  kisa bir aciklama yapar
-    //Vendor "Description" kutusuna urunu tanitan bir aciklama yapar
-    //Vendor buyuk foto kutusuna urunun fotosunu yuklar
-    //Vendor kucuk foto kutusuna urunun fotosunu yuklar
-    //Vendor "Categories" kutucugunda urunune ait bir category secer
-    //Vendor "Product brands" kutucugundan bir marca ismi secer
+
+
     //Vendor "Inventory" secenegine tiklar
     //Vendor "SKU" kutucuguna bir referans numarasi girer
     //Vendor "Manage Stock?" kutucugunu isaretler
@@ -68,4 +51,41 @@ public class TC_01 {
     //Vendor "Purchase Note" kutusuna bir not girer
     //Vendor "SUBMIT" butonuna tiklar
     //Vendor islemin tamamlandigi onayini gorur
+
+    @Test
+    public void testTC_01() {
+        HomePage homePage = new HomePage();
+        SignIn signIn = new SignIn();
+        MyAccount myAccount = new MyAccount();
+        StoreManagerPage storeManagerPage = new StoreManagerPage();
+        InventoryPage inventoryPage = new InventoryPage();
+
+        Driver.getDriver().get(ConfigReader.getProperty("URL"));
+        homePage.signIn.click();
+        signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("emailhava"));
+        signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava") + Keys.ENTER);
+        ReusableMethods.waitFor(2);
+        homePage.myAccountSecenegi.click();
+        ReusableMethods.verifyElementDisplayed(myAccount.myAccountSayfasi);
+        ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
+        ReusableMethods.verifyElementDisplayed(storeManagerPage.StoreManagerSayfaGorunumu);
+        ReusableMethods.scrollDownActions();
+        ReusableMethods.clickByJS(myAccount.ProductSecenegi);
+        ReusableMethods.scrollDownActions();
+        ReusableMethods.clickByJS(myAccount.AddNewSecenegi);
+        ReusableMethods.scrollDownActions();
+        //Vendor "Add Product"a oldugunu dogrular
+        //Vendor "Simple Product" kutusunda "simple product'u secili gorur
+        //Vendor "Virtual" kutucugunu secer
+        //Vendor "Downloadable" kutucugunu secer
+        //Vendor "ProductTitle" kutusuna ekleyecegi urunun basligini yazar
+        //Vendor "Price($)" kutusuna urunun fiyatini yazar
+        //Vendor "Sale Price($)" kutusuna urunun indirimli fiyatini yazar
+        //Vendor "Short Description" kutusuna  kisa bir aciklama yapar
+        //Vendor "Description" kutusuna urunu tanitan bir aciklama yapar
+        //Vendor buyuk foto kutusuna urunun fotosunu yuklar
+        //Vendor kucuk foto kutusuna urunun fotosunu yuklar
+        //Vendor "Categories" kutucugunda urunune ait bir category secer
+        //Vendor "Product brands" kutucugundan bir marca ismi secer
+    }
 }

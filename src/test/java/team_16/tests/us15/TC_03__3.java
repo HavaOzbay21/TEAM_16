@@ -67,6 +67,7 @@ public class TC_03__3 {
         assert shippingPage.ShippingClassDriopdown.isDisplayed();
         Select select = new Select(shippingPage.ProcessingTimeDropdown);
         select.selectByVisibleText("2-3 weeks");
+        ReusableMethods.waitFor(2);
         Driver.closeDriver();
     }
 }

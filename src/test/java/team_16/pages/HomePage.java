@@ -14,7 +14,7 @@ public class HomePage {
     @FindBy(xpath = "//span[.='Sign In ']")
     public WebElement signIn;
 
-    @FindBy(xpath = "(//a[.='My Account'])[1]")
+    @FindBy(xpath = "//li[@id='menu-item-1074']")
     public WebElement myAccountSecenegi;
 
     @FindBy(xpath = "(//*[@type=\"search\"])[1]")

@@ -68,7 +68,7 @@ public class TC_04 {
         ReusableMethods.waitFor(2);
 //        Driver.getDriver().switchTo().alert();
 //        ReusableMethods.waitFor(2);
-        Driver.getDriver().switchTo().alert().sendKeys("rosa");
+        Driver.getDriver().switchTo().alert().sendKeys("violeta");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(2);

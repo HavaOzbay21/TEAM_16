@@ -9,6 +9,8 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
+
+
 public class TC_02 {
 
     @Test
@@ -25,9 +27,9 @@ public class TC_02 {
         signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava")+ Keys.ENTER);
         ReusableMethods.waitFor(2);
         homePage.myAccountSecenegi.click();
-        assert myAccount.myAccountSayfasi.isDisplayed();
+        ReusableMethods.verifyElementDisplayed(myAccount.myAccountSayfasi);
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
-        assert storeManagerPage.StoreManagerSayfaGorunumu.isDisplayed();
+        ReusableMethods.verifyElementDisplayed(storeManagerPage.StoreManagerSayfaGorunumu);
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.ProductSecenegi);
         ReusableMethods.scrollDownActions();
@@ -43,7 +45,7 @@ public class TC_02 {
         inventoryPage.StockQtyKutusu.sendKeys(ConfigReader.getProperty("StockQty"));
         ReusableMethods.scrollDownActions();
         ReusableMethods.waitFor(2);
-        assert inventoryPage.AllowBackordersDropdown.isDisplayed();
+        ReusableMethods.verifyElementDisplayed(inventoryPage.AllowBackordersDropdown);
         ReusableMethods.scrollDownActions();
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(inventoryPage.SoldIndividuallyKutucugu);

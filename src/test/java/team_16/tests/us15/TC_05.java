@@ -27,7 +27,7 @@ public class TC_05 {
         ShippingPage shippingPage = new ShippingPage();
         LinkedPage linkedPage = new LinkedPage();
         SEOPage seoPage = new SEOPage();
-        ToptanÜrünGöstermeAyarlarıPage toptanÜrünGöstermeAyarlarıPage = new ToptanÜrünGöstermeAyarlarıPage();
+        ToptanUrunGostermeAyarlarıPage toptanUrunGostermeAyarlarıPage = new ToptanUrunGostermeAyarlarıPage();
         AdvancedPage advancedPage = new AdvancedPage();
 
 
@@ -56,12 +56,12 @@ public class TC_05 {
         ReusableMethods.scrollDownActions();
         seoPage.EnterAFocusKeywordKutucugu.sendKeys("REGALOS");
         seoPage.MetaDescriptionKutucugu.sendKeys("regalos diferentes");
-        ReusableMethods.clickByJS(storeManagerPage.ToptanÜrünGöstermeAyarlarıSecenegi);
+        ReusableMethods.clickByJS(storeManagerPage.ToptanUrunGostermeAyarlarıSecenegi);
         ReusableMethods.scrollDownActions();
-        Select select = new Select(toptanÜrünGöstermeAyarlarıPage.PieceTypeDropdown);
+        Select select = new Select(toptanUrunGostermeAyarlarıPage.PieceTypeDropdown);
         select.selectByVisibleText("Piece");
-        toptanÜrünGöstermeAyarlarıPage.UnitsPerPieceKutucugu.sendKeys("50");
-        toptanÜrünGöstermeAyarlarıPage.MinOrderQuantityKutucugu.sendKeys("50");
+        toptanUrunGostermeAyarlarıPage.UnitsPerPieceKutucugu.sendKeys("50");
+        toptanUrunGostermeAyarlarıPage.MinOrderQuantityKutucugu.sendKeys("50");
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(storeManagerPage.AdvancedSecenegi);
         ReusableMethods.scrollDownActions();

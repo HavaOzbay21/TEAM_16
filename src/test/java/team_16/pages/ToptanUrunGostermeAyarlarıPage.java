@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import team_16.utilities.Driver;
 
-public class ToptanÜrünGöstermeAyarlarıPage {
-    public ToptanÜrünGöstermeAyarlarıPage() {
+public class ToptanUrunGostermeAyarlarıPage {
+    public ToptanUrunGostermeAyarlarıPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 

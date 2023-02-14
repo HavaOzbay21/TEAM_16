@@ -49,23 +49,29 @@ public class TC_01 {
         signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava") + Keys.ENTER);
         ReusableMethods.waitFor(2);
         homePage.myAccountSecenegi.click();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert myAccount.myAccountSayfasi.isDisplayed();
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
         assert storeManagerPage.StoreManagerSayfaGorunumu.isDisplayed();
-        ReusableMethods.takeScreenshotOfElementH(storeManagerPage.StoreManagerSayfaGorunumu);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.ProductSecenegi);
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.AddNewSecenegi);
+        ReusableMethods.scrollDownActions();
+        ReusableMethods.scrollDownActions();
+        ReusableMethods.scrollDownActions();
         ReusableMethods.waitFor(2);
-        assert storeManagerPage.InventorySecenegi.isDisplayed();
+        ReusableMethods.verifyElementDisplayed(storeManagerPage.InventorySecenegi);
         assert storeManagerPage.ShippingSecenegi.isDisplayed();
         assert storeManagerPage.AttributesSecenegi.isDisplayed();
         assert storeManagerPage.LinkedSecenegi.isDisplayed();
         assert storeManagerPage.SEOSecenegi.isDisplayed();
-        assert storeManagerPage.ToptanÜrünGöstermeAyarlarıSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
+        assert storeManagerPage.ToptanUrunGostermeAyarlarıSecenegi.isDisplayed();
         assert storeManagerPage.AdvancedSecenegi.isDisplayed();
-        ReusableMethods.takeScreenshotOfElementH(storeManagerPage.ShippingSecenegi);
+        Driver.closeDriver();
+
     }
 }
 
