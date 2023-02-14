@@ -247,8 +247,10 @@ public class HomePage {
 
 
 
-
-
+    @FindBy(xpath = "//span[.='Sign Out']")
+    public WebElement signOutButton;
+    @FindBy(xpath="(//*[@class='cart-count'])[1]")
+    public WebElement cartCount;
 
 
 
