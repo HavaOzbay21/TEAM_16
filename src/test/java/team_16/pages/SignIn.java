@@ -19,7 +19,11 @@ public class SignIn {
     @FindBy(xpath = "(//input[@name=\"username\"])[1]")
     public WebElement Username_or_email_address;
 
+    @FindBy (id = "password")
+    public WebElement password;
 
+    @FindBy (xpath = "//button[@type='submit']")
+    public WebElement signInButton;
 }
 
 
