@@ -1,4 +1,4 @@
-package team_16.tests.us21;
+package team_16.tests.us06;
 
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
@@ -10,41 +10,35 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
-public class TC_01 {
-    //Kullanıcı search box tan istediği bir ürünü arayabilmeli
+public class TC_02 {
+
+    //Aradığı ürünü sepete ekleyebilmeli (ADD TO CART)
+
     @Test
     public void test1() {
-
-        //1-Kullanici https://spendinggood.com/ url'sine gider
         Driver.getDriver().get(ConfigReader.getProperty("app_url"));
         HomePage homePage=new HomePage();
         SignIn signIn=new SignIn();
         Urunler urunler=new Urunler();
 
-        //2-Kullanici Sign In butonu tiklar
+
         homePage.signIn.click();
 
-        //3-Kullanici username alanina username bilgisini girer
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("username"));
-
-        //4-Kullanici password alanina sifresini girer
         signIn.password.sendKeys(ConfigReader.getProperty("password"));
-
-        //5-Kullanici SIGN IN butonunu tiklar
         signIn.sigInTus.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
 
-        //6-Sayfaya giris yaptigini gorur
-        Assert.assertTrue(homePage.signOutButton.isDisplayed());
-
-        //7-Search alanindan istegidi urunu aratir
         homePage.searchButonu.sendKeys(ConfigReader.getProperty("urun"), Keys.ENTER);
+        //Kullanici aradigi urunu tiklar
+        urunler.apple.click();
         ReusableMethods.waitFor(1);
 
-        //8-aradigi urunu gorur
-        Assert.assertTrue(urunler.apple.isDisplayed());
+        //ADD TO CART butonunu tiklar
+        urunler.addToCard.click();
 
-
+        //Kullanici cart butonu alaninda ekledigi urun sayisini gorur
+        Assert.assertTrue(homePage.cartCount.isDisplayed());
 
     }
 }

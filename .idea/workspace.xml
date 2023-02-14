@@ -4,30 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/OrdersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ShoppingCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/YourOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_08.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2023_21_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2023_21_59__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/ShoppingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ShoppingCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/SignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us13/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us13/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/Urunler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/Urunler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/BillingDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/BillingDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/ShoppingCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/ShoppingCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/SignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/Urunler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/Urunler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us06/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us06/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us21/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us21/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" afterDir="false" />
     </list>
-
-    <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="" />
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,14 +62,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "project.scopes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="team_16.tests.us22" />
@@ -68,53 +82,17 @@
       <recent name="team_16.tests.us18" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC_04">
-    <configuration name="TC_01.tc01" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TC_07 (1)">
+    <configuration name="TC_05" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team_16.tests.us19.*" />
+          <option name="PATTERN" value="team_16.tests.us06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us19" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us19.TC_01" />
-      <option name="METHOD_NAME" value="tc01" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_01.tc04" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEAM_16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team_16.tests.us19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us19" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us19.TC_01" />
-      <option name="METHOD_NAME" value="tc04" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_02" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEAM_16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team_16.tests.us19.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us19" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us19.TC_02" />
+      <option name="PACKAGE_NAME" value="team_16.tests.us06" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us06.TC_05" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -122,16 +100,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_03" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC_05.test1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team_16.tests.us19.*" />
+          <option name="PATTERN" value="team_16.tests.us06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us19" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us19.TC_03" />
+      <option name="PACKAGE_NAME" value="team_16.tests.us06" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us06.TC_05" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_06" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team_16.tests.us06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team_16.tests.us06" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us06.TC_06" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -139,16 +135,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_04" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TC_07 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team_16.tests.us19.*" />
+          <option name="PATTERN" value="team_16.tests.us21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us19" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us19.TC_04" />
+      <option name="PACKAGE_NAME" value="team_16.tests.us21" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us21.TC_07" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_07" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team_16.tests.us06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team_16.tests.us06" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us06.TC_07" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -158,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TC_04" />
-        <item itemvalue="TestNG.TC_03" />
-        <item itemvalue="TestNG.TC_02" />
-        <item itemvalue="TestNG.TC_01.tc01" />
-        <item itemvalue="TestNG.TC_01.tc04" />
+        <item itemvalue="TestNG.TC_07 (1)" />
+        <item itemvalue="TestNG.TC_07" />
+        <item itemvalue="TestNG.TC_06" />
+        <item itemvalue="TestNG.TC_05" />
+        <item itemvalue="TestNG.TC_05.test1" />
       </list>
     </recent_temporary>
   </component>
