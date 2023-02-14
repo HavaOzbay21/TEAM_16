@@ -5,6 +5,11 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
+import team_16.pages.hacer.SpendinggoodAddProductPage;
+import team_16.pages.hacer.SpendinggoodHomePage;
+import team_16.pages.hacer.SpendinggoodMyAccountPage;
+import team_16.pages.hacer.SpendinggoodStoreManagerPage;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -378,6 +383,7 @@ public class ReusableMethods {
 
 
 
+
     public static String takeScreenshotOfElementH(WebElement element) throws IOException {
 //        1. take screenshot
         File image = element.getScreenshotAs(OutputType.FILE);
@@ -408,5 +414,49 @@ public class ReusableMethods {
 
 
 
+
+
+    public static void LoginVendor() {
+
+
+        SpendinggoodHomePage SpendinggoodHomePage = new SpendinggoodHomePage();
+        SpendinggoodMyAccountPage SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();
+        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
+
+
+        Driver.getDriver().get(ConfigReader.getProperty("URL"));
+        SpendinggoodHomePage.signIn.click();
+        waitFor(3);
+        SpendinggoodHomePage.mailKutusu.sendKeys(ConfigReader.getProperty("vendor-email"));
+        waitFor(3);
+        SpendinggoodHomePage.passwordKutusu.sendKeys(ConfigReader.getProperty("vendor-password"));
+        waitFor(3);
+        SpendinggoodHomePage.signInButton.click();
+    }
+
+    public static void goToProduct() {
+        SpendinggoodHomePage SpendinggoodHomePage = new SpendinggoodHomePage();
+        SpendinggoodMyAccountPage SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();
+        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
+
+
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+        SpendinggoodHomePage.myAccount.click();
+        waitFor(5);
+        SpendinggoodMyAccountPage.storeManager.click();
+        waitFor(5);
+        Actions actions = new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        waitFor(5);
+        SpendinggoodStoreManagerPage.product.click();
+
+        jse.executeScript("arguments[0].click();", SpendinggoodStoreManagerPage.addNew);
+        // SpendinggoodStorePage.addNew.click();
+        waitFor(5);
+
+
+
+    }
 
 }
