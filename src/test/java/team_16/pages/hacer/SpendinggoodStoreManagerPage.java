@@ -19,4 +19,13 @@ public class SpendinggoodStoreManagerPage {
     @FindBy(xpath = "//select[@id='product_type']")
     public  WebElement  simpleProduct;
 
+
+
+
+
+
+
+
+
+
 }
