@@ -14,6 +14,7 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
+import java.io.IOException;
 import java.security.Key;
 import java.util.jar.JarEntry;
 
@@ -36,7 +37,7 @@ public class TC_01 {
 
 
     @Test
-    public void testTC_01() {
+    public void testTC_01() throws IOException {
         HomePage homePage = new HomePage();
         SignIn signIn = new SignIn();
         MyAccount myAccount = new MyAccount();
@@ -45,12 +46,13 @@ public class TC_01 {
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("emailhava"));
-        signIn.password.sendKeys(ConfigReader.getProperty("passwordhava")+Keys.ENTER);
+        signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava") + Keys.ENTER);
         ReusableMethods.waitFor(2);
         homePage.myAccountSecenegi.click();
         assert myAccount.myAccountSayfasi.isDisplayed();
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
         assert storeManagerPage.StoreManagerSayfaGorunumu.isDisplayed();
+        ReusableMethods.takeScreenshotOfElementH(storeManagerPage.StoreManagerSayfaGorunumu);
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.ProductSecenegi);
         ReusableMethods.scrollDownActions();
@@ -63,6 +65,13 @@ public class TC_01 {
         assert storeManagerPage.SEOSecenegi.isDisplayed();
         assert storeManagerPage.ToptanÜrünGöstermeAyarlarıSecenegi.isDisplayed();
         assert storeManagerPage.AdvancedSecenegi.isDisplayed();
-
+        ReusableMethods.takeScreenshotOfElementH(storeManagerPage.ShippingSecenegi);
     }
 }
+
+
+
+
+
+
+
