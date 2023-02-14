@@ -335,67 +335,18 @@ public class ReusableMethods {
 //        loginPage.passwordBox.sendKeys(password);
 //        loginPage.signIn.click();
 //    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public static String takeScreenshotOfElementH(WebElement element) throws IOException {
+public static String takeScreenshotOfElementH(WebElement element) throws IOException {
 //        1. take screenshot
-        File image = element.getScreenshotAs(OutputType.FILE);
+    File image = element.getScreenshotAs(OutputType.FILE);
 //        2. save screenshot
 //        path
-        String currentTime = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-        String path = System.getProperty("user.dir")+"/test-output/Hava.Screenshots/"+currentTime+"image.png";
-        FileUtils.copyFile(image,new File(path));
-        File finalDestination = new File(path);
-        FileUtils.copyFile(image, finalDestination);
-        return path;
-    }
+    String currentTime = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+    String path = System.getProperty("user.dir")+"/test-output/Hava.Screenshots/"+currentTime+"image.png";
+    FileUtils.copyFile(image,new File(path));
+    File finalDestination = new File(path);
+    FileUtils.copyFile(image, finalDestination);
+    return path;
+}
 
 
     public static String getScreenshotH(String name) throws IOException {
@@ -413,11 +364,8 @@ public class ReusableMethods {
     }
 
 
-
-
-
     public static void LoginVendor() {
-
+Sp
 
         SpendinggoodHomePage SpendinggoodHomePage = new SpendinggoodHomePage();
         SpendinggoodMyAccountPage SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();
@@ -460,3 +408,57 @@ public class ReusableMethods {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
