@@ -5,81 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/TEAM_16.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/Adresses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/SignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/VendorRegistration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us08/US_09.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us11/US_11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_09.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/Adresses.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/BillingAddress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/SignUp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/VendorRegistration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_02.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_03.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_04.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_05.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_06.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us11/US_11.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_02.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_03.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/20230206023342.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/20230206024057.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2023_21_59_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2023_21_59_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_02_2023_21_59__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_02_05_00_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_02_05_00_02_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023_02_05_00_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_4_2023_10_58_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_4_2023_10_58_PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_4_2023_10_58_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_08.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TEAM_16.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TEAM_16.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/ShoppingCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ShoppingCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/SignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/SignIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/Urunler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/Urunler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us08/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us08/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us10/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us11/TC_01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us12/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/ShoppingCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/ShoppingCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/SignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/SignIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/Urunler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/Urunler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/hacer/SpendinggoodAddProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/hacer/SpendinggoodAddProductPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us08/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us08/TC_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us10/TC_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us11/TC_01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us06/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us21/TC_01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
