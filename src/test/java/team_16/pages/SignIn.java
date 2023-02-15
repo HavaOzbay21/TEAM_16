@@ -13,7 +13,9 @@ public class SignIn {
     public SignIn() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(xpath ="(//*[@class='w-icon-account'])[1]")
+
+
+    @FindBy(xpath ="(//button[text()='Sign In']")
     public WebElement sigInButton;
 
     @FindBy(xpath = "(//input[@name=\"username\"])[1]")
@@ -21,6 +23,50 @@ public class SignIn {
 
     @FindBy (id = "password")
     public WebElement password;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @FindBy(xpath = "//div[@id='customer_login']")   public WebElement singInSignUpSayfasi;
+ @FindBy(xpath = "//a[@class='nav-link active']")   public WebElement singInSecilimi;
+ @FindBy(xpath = "//input[@id='password']")   public WebElement passwordH;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement signInButton;
@@ -247,8 +293,11 @@ public class SignIn {
 
 
 
+
+
     @FindBy(xpath="//*[@value='Sign In']")
     public WebElement sigInTus;
+
 
 }
 

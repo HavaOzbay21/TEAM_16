@@ -48,6 +48,7 @@ public class BillingDetails {
 
 
 
+    //FATIH
 
 
 
@@ -90,6 +91,7 @@ public class BillingDetails {
 
 
 
+    //HAVA
 
 
 
@@ -132,6 +134,7 @@ public class BillingDetails {
 
 
 
+    //DAVUT
 
 
 
@@ -174,6 +177,7 @@ public class BillingDetails {
 
 
 
+    //HALIT
 
 
 
@@ -208,6 +212,178 @@ public class BillingDetails {
 
 
 
+
+
+
+
+
+
+
+
+ //HACER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //OZLEM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SILA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//HAMIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SEHRI
 
 
 
@@ -266,6 +442,7 @@ public class BillingDetails {
     public WebElement couponCode;
     @FindBy(xpath="//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
     public WebElement codeSonucYazi;
+
 
 
 

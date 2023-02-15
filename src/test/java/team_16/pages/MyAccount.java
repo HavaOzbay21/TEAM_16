@@ -20,6 +20,46 @@ public class MyAccount {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //HAVA
+ @FindBy(xpath = "//a[text()='Store Manager']")
+    public WebElement StoreManagerSecenegi;
+ @FindBy(xpath = "(//a[@class='wcfm_menu_item '])[3]") public WebElement ProductSecenegi;
+ @FindBy(xpath = "(//span[@class='wcfmfa fa-cube'])[3]")public WebElement AddNewSecenegi;
+
+
+
+
+
+
     @FindBy (xpath ="(//div[@class='icon-box text-center'])[1]")
     public WebElement orders;
 
@@ -248,7 +288,10 @@ public class MyAccount {
 
 
 
+
+
     @FindBy(xpath="//*[@class='icon-box-title text-normal']")
     public WebElement ordersYazisi;
+
 
 }
