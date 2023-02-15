@@ -247,7 +247,8 @@ public class Urunler {
 
 
 
-
+    @FindBy(xpath="(//*[text()='Apple'])[2]")
+    public WebElement apple1;
 
 
 

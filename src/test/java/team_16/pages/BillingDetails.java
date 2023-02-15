@@ -47,7 +47,10 @@ public class BillingDetails {
 
 
 
+<<<<<<< HEAD
     //FATIH
+=======
+>>>>>>> master
 
 
 
@@ -87,7 +90,10 @@ public class BillingDetails {
 
 
 
+<<<<<<< HEAD
     //HAVA
+=======
+>>>>>>> master
 
 
 
@@ -127,7 +133,10 @@ public class BillingDetails {
 
 
 
+<<<<<<< HEAD
     //DAVUT
+=======
+>>>>>>> master
 
 
 
@@ -167,7 +176,10 @@ public class BillingDetails {
 
 
 
+<<<<<<< HEAD
     //HALIT
+=======
+>>>>>>> master
 
 
 
@@ -207,7 +219,10 @@ public class BillingDetails {
 
 
 
+<<<<<<< HEAD
  //HACER
+=======
+>>>>>>> master
 
 
 
@@ -247,6 +262,7 @@ public class BillingDetails {
 
 
 
+<<<<<<< HEAD
  //OZLEM
 
 
@@ -399,12 +415,35 @@ public class BillingDetails {
 
 
 
+=======
+>>>>>>> master
 
 
 
 
 
 
+<<<<<<< HEAD
+=======
+    @FindBy(xpath=("//*[text()='Billing details']"))
+    public WebElement billingDetailsYazi;
+    @FindBy(xpath=("//*[text()='Payment Methods']"))
+    public WebElement paymentMethod;
+    @FindBy(xpath=("//*[@id='payment_method_bacs']"))
+    public WebElement eftButton;
+    @FindBy(xpath=("//*[@id='payment_method_cod']"))
+    public WebElement payDoorButton;
+    @FindBy(xpath=("//*[@id='place_order']"))
+    public WebElement placeOrderButton;
+    @FindBy(xpath = "//*[@class='woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received order-success']")
+    public WebElement thankyouYazi;
+    @FindBy(xpath="//*[@class='showcoupon']")
+    public WebElement enterYourCode;
+    @FindBy(name="coupon_code")
+    public WebElement couponCode;
+    @FindBy(xpath="//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
+    public WebElement codeSonucYazi;
+>>>>>>> master
 
 
 
