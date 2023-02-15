@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="" />
-=======
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/TEAM_16.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TEAM_16.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -15,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
->>>>>>> master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,18 +60,18 @@
       <recent name="team_16.tests.us18" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC_01.TC001 (1)">
-    <configuration name="TC_01.TC001 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TC_01.testTC_01 (1)">
+    <configuration name="TC_01.testTC_01 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="team_16.tests.us17.*" />
+          <option name="PATTERN" value="team_16.tests.us15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us17" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us17.TC_01" />
-      <option name="METHOD_NAME" value="TC001" />
+      <option name="PACKAGE_NAME" value="team_16.tests.us15" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us15.TC_01" />
+      <option name="METHOD_NAME" value="testTC_01" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -82,15 +79,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_01.tc04" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
     <configuration name="TC_01.testTC_01" type="TestNG" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -99,17 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-=======
->>>>>>> master
-    <configuration name="TC_02" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
     <configuration name="TC_02.testTC_02" type="TestNG" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
@@ -118,100 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-=======
->>>>>>> master
-    <configuration name="TC_03" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_04" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_04.TC04" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEAM_16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team_16.tests.us18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us18" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us18.TC_04" />
-      <option name="METHOD_NAME" value="TC04" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
     <configuration name="TC_04.testTC_04" type="TestNG" temporary="true" nameIsGenerated="true">
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-=======
->>>>>>> master
-    <configuration name="TC_05" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEAM_16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team_16.tests.us17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us17" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us17.TC_05" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_05.TC05 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEAM_16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team_16.tests.us17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us17" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us17.TC_05" />
-      <option name="METHOD_NAME" value="TC05" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_05.TC05" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEAM_16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team_16.tests.us18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us18" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us18.TC_05" />
-      <option name="METHOD_NAME" value="TC05" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -228,19 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TC_01.testTC_01 (1)" />
         <item itemvalue="TestNG.TC_04.testTC_04" />
         <item itemvalue="TestNG.TC_02.testTC_02" />
         <item itemvalue="TestNG.TC_01.testTC_01" />
         <item itemvalue="TestNG.TC_05.testTC_05" />
-        <item itemvalue="TestNG.TC_04" />
-        <item itemvalue="TestNG.TC_03" />
-        <item itemvalue="TestNG.TC_02" />
-        <item itemvalue="TestNG.TC_01.tc04" />
-        <item itemvalue="TestNG.TC_01.TC001 (1)" />
-        <item itemvalue="TestNG.TC_05.TC05 (1)" />
-        <item itemvalue="TestNG.TC_05" />
-        <item itemvalue="TestNG.TC_04.TC04" />
-        <item itemvalue="TestNG.TC_05.TC05" />
       </list>
     </recent_temporary>
   </component>

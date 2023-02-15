@@ -111,8 +111,8 @@ public class MyAccount {
     @FindBy (xpath ="//li[@class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout']")
     public WebElement logOut2;
 
-<<<<<<< HEAD
-=======
+
+
 
 
 
@@ -293,5 +293,5 @@ public class MyAccount {
     @FindBy(xpath="//*[@class='icon-box-title text-normal']")
     public WebElement ordersYazisi;
 
->>>>>>> master
+
 }

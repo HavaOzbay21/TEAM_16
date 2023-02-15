@@ -365,7 +365,7 @@ public static String takeScreenshotOfElementH(WebElement element) throws IOExcep
 
 
     public static void LoginVendor() {
-Sp
+
 
         SpendinggoodHomePage SpendinggoodHomePage = new SpendinggoodHomePage();
         SpendinggoodMyAccountPage SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();

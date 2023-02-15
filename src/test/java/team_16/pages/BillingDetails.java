@@ -47,10 +47,8 @@ public class BillingDetails {
 
 
 
-<<<<<<< HEAD
+
     //FATIH
-=======
->>>>>>> master
 
 
 
@@ -90,10 +88,10 @@ public class BillingDetails {
 
 
 
-<<<<<<< HEAD
+
+
+
     //HAVA
-=======
->>>>>>> master
 
 
 
@@ -133,10 +131,10 @@ public class BillingDetails {
 
 
 
-<<<<<<< HEAD
+
+
+
     //DAVUT
-=======
->>>>>>> master
 
 
 
@@ -176,10 +174,10 @@ public class BillingDetails {
 
 
 
-<<<<<<< HEAD
+
+
+
     //HALIT
-=======
->>>>>>> master
 
 
 
@@ -219,10 +217,10 @@ public class BillingDetails {
 
 
 
-<<<<<<< HEAD
+
+
+
  //HACER
-=======
->>>>>>> master
 
 
 
@@ -262,7 +260,9 @@ public class BillingDetails {
 
 
 
-<<<<<<< HEAD
+
+
+
  //OZLEM
 
 
@@ -415,16 +415,15 @@ public class BillingDetails {
 
 
 
-=======
->>>>>>> master
 
 
 
 
 
 
-<<<<<<< HEAD
-=======
+
+
+
     @FindBy(xpath=("//*[text()='Billing details']"))
     public WebElement billingDetailsYazi;
     @FindBy(xpath=("//*[text()='Payment Methods']"))
@@ -443,7 +442,7 @@ public class BillingDetails {
     public WebElement couponCode;
     @FindBy(xpath="//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
     public WebElement codeSonucYazi;
->>>>>>> master
+
 
 
 

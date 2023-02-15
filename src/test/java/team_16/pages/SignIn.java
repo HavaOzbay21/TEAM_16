@@ -71,8 +71,8 @@ public class SignIn {
     @FindBy (xpath = "//button[@type='submit']")
     public WebElement signInButton;
 
-<<<<<<< HEAD
-=======
+
+
 
 
 
@@ -298,7 +298,7 @@ public class SignIn {
     @FindBy(xpath="//*[@value='Sign In']")
     public WebElement sigInTus;
 
->>>>>>> master
+
 }
 
 
