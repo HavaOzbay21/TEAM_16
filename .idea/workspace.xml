@@ -4,9 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="" />
-=======
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/TEAM_16.iml" afterDir="false" />
@@ -84,7 +81,6 @@
       <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us12/TC_01.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" afterDir="false" />
     </list>
->>>>>>> 767b2509cc81a486164f059a91c4121c75f9fb6d
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,11 +109,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-<<<<<<< HEAD
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/TEAM_16&quot;
-=======
     &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;
->>>>>>> 767b2509cc81a486164f059a91c4121c75f9fb6d
   }
 }</component>
   <component name="RecentsManager">
