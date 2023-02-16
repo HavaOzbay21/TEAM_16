@@ -2,6 +2,7 @@ package team_16.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
 public class ConfigReader {
     //Bu sinif   configuration.properties file'i okumak icin kullanilir
     //propert file'i okumak icin properti objesi kullanilir

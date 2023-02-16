@@ -2,13 +2,17 @@ package team_16.tests.us19;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import team_16.pages.*;
 import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
-public class TC_04 {
+public class TC_06 {
+
+
+
 
     @Test
     public void tc04() throws InterruptedException {
@@ -70,7 +74,22 @@ public class TC_04 {
                 Keys.TAB,ConfigReader.getProperty("postcode"),Keys.TAB,ConfigReader.getProperty("city"),
                 Keys.TAB,Keys.TAB,ConfigReader.getProperty("phone"),Keys.TAB,ConfigReader.getProperty("email"));
 
+        Assert.assertTrue(billingDetails.totalGorunurluk.isDisplayed());
+
+        ReusableMethods.clickByJS(billingDetails.wiseEFTTransfer);
+        ReusableMethods.clickByJS(billingDetails.payDoor);
+
+        Assert.assertTrue(billingDetails.radioButtonGorunuluruk.isDisplayed());
+
+
+
+
+
 
 
     }
+
+
+
+
 }

@@ -20,5 +20,33 @@ public class BillingDetails {
     @FindBy(xpath = "//*[@name=\"billing_address_1\"]")
     public WebElement streetAddress;
 
+    @FindBy(xpath = "//th[.='Total']")
+    public WebElement totalGorunurluk;
+
+    @FindBy(xpath ="//*[@for=\"payment_method_bacs\"]")
+    public WebElement wiseEFTTransfer;
+
+    @FindBy(xpath = "//*[@for=\"payment_method_cod\"]")
+    public WebElement payDoor;
+
+    @FindBy(xpath = "(//*[@class=\"input-radio\"])[2]")
+    public WebElement radioButtonGorunuluruk;
+
+    @FindBy(xpath = "//*[@id=\"place_order\"]")
+    public WebElement placeOrder;
+
+    @FindBy(xpath = "//*[.='Enter your code']")
+    public WebElement enterYourCode;
+
+    @FindBy(xpath = "//*[@id=\"coupon_code\"]")
+    public WebElement codeBoslugu;
+
+    @FindBy (xpath = "//*[.='Coupon: indirim']")
+    public WebElement kuponIndirimiGorunurlugu;
+
+
+
+
+
 
 }

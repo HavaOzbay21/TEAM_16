@@ -15,9 +15,14 @@ public class MyAccount {
     @FindBy(xpath = "(//*[.='My Account'])[3]")
     public WebElement myAccountSayfasi;
 
+    @FindBy(xpath = "(//*[.='My Account'])[2]")
+    public WebElement myaccountButonu;
+
     @FindBy(xpath = "(//*[@href=\"https://spendinggood.com/my-account-2/orders/\"])[1]")
     public WebElement ordersButton;
 
+    @FindBy(xpath = "//*[@class=\"icon-box-icon icon-orders\"]")
+    public WebElement ordersButtonu1;
 
 
     @FindBy (xpath ="(//div[@class='icon-box text-center'])[1]")

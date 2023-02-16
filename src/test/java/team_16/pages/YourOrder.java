@@ -13,4 +13,13 @@ public class YourOrder {
 
     @FindBy(xpath = "//*[@id=\"order_review_heading\"]")
     public WebElement yourOrderYazisi;
+
+    @FindBy(xpath = "(//*[.='View'])[1]")
+    public WebElement wievButonu;
+
+    @FindBy(xpath = "//*[.='Order details']")
+    public  WebElement orderDetailsButonu;
+
+
+
 }
