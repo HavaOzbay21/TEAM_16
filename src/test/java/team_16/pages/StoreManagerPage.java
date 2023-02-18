@@ -64,12 +64,13 @@ public class StoreManagerPage {
     @FindBy(xpath = "//input[@id='pro_title']")public WebElement ProductTitle;
     @FindBy(xpath = "//input[@id='regular_price']")public WebElement Price;
     @FindBy(xpath = "//input[@id='sale_price']")public WebElement SalePrice;
-    @FindBy(xpath = "//iframe[@id='excerpt_ifr']")public WebElement ShortDescription;
-    @FindBy(xpath = "//iframe[@id='description_ifr']")public WebElement Description;
+    @FindBy(xpath = "(//body[@id='tinymce'])[1]")public WebElement ShortDescription;
+    @FindBy(xpath = "(//body[@id='tinymce'])[2]")public WebElement Description;
     @FindBy(xpath = "//img[@id='featured_img_display']")public WebElement BuyukFoto;
     @FindBy(xpath = "//img[@id='gallery_img_gimage_0_display']")public WebElement KucukFoto;
-    @FindBy(xpath = "//input[@class='wcfm-checkbox checklist_type_product_cat ']")public WebElement CategoryAccessories;
+    @FindBy(xpath = "//span[text()='Accessories']")public WebElement CategoryAccessories;
     @FindBy(xpath = "//input[@data-super_parent='462']")public WebElement ProductBrandsEspanya;
+
 
 
 
