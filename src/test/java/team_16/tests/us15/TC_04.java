@@ -9,26 +9,7 @@ import team_16.utilities.ReusableMethods;
 
 public class TC_04 {
 
-    //Vendor "Attributes"e tiklar
-    //Vendor "Color"a tiklar
-    //Vendor color ekleme sayfasini gorur
-    //Vendor "SELECT ALL"a tiklar
-    //Vendor "Color" kutusuna gelen butun renkleri gorur
-    //Vendor "SELECT NONE"e tiklar
-    //Vendor Color kutusunun bosaldigini gorur
-    //Vendor "ADD NEW"e tiklar
-    //Vender acilan iframe eklemek istedigi rengi girer
-    //Vendor "Aceptar"a tiklar
-    //Vendor yazdigi rengi "Color" kutusubda gorur
-    //Vendor "Size"a tiklar
-    //Vendor "SELECT ALL"a tiklar
-    //Vendor "Size" kutusuna gelen butun bedenleri gorur
-    //Vendor "SELECT NONE"e tiklar
-    //Vendor "Size" kutusunun bosaldigini gorur
-    //Vendor "ADD NEW"e tiklar
-    //Vendor acilan iframe sayfasina eklemek istedigi "beden"i girer
-    //Vendor  "Aceptar"a tiklar
-    //Vendor ekledigi bedeni "Size" kutusunda gorur
+
 
     @Test
     public void testTC_04() {
@@ -58,20 +39,42 @@ public class TC_04 {
         ReusableMethods.scrollDownActions();
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(storeManagerPage.AttributesSecenegi);
-        attributesPage.ColorSecenegi.click();
+        ReusableMethods.clickByJS(attributesPage.ColorSecenegi);
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(attributesPage.SelectAllSecenegi);
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.SelectNoneSecenegi);
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSecenegi);
+        ReusableMethods.waitFor(10);
+
+        Driver.getDriver().switchTo().alert().sendKeys("verde");
+
+       ReusableMethods.waitFor(2);
+        Driver.getDriver().switchTo().alert().accept();
+        ReusableMethods.waitFor(5);
+
+        //Vendor "Size"a tiklar
+        attributesPage.SizeSecenegi.click();
+        ReusableMethods.clickByJS(attributesPage.SelectAllSecenegi);
         ReusableMethods.waitFor(2);
-//        Driver.getDriver().switchTo().alert();
-//        ReusableMethods.waitFor(2);
-        Driver.getDriver().switchTo().alert().sendKeys("violeta");
+        ReusableMethods.clickByJS(attributesPage.SelectNoneSecenegi);
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(attributesPage.AddNewSecenegi);
+        ReusableMethods.waitFor(10);
+        Driver.getDriver().switchTo().alert().sendKeys("puqueno");
+
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(2);
+        //Vendor "SELECT ALL"a tiklar
+        //Vendor "Size" kutusuna gelen butun bedenleri gorur
+        //Vendor "SELECT NONE"e tiklar
+        //Vendor "Size" kutusunun bosaldigini gorur
+        //Vendor "ADD NEW"e tiklar
+        //Vendor acilan iframe sayfasina eklemek istedigi "beden"i girer
+        //Vendor  "Aceptar"a tiklar
+        //Vendor ekledigi bedeni "Size" kutusunda gorur
     }
 
 }

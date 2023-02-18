@@ -1,6 +1,7 @@
 package team_16.tests.us16;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import team_16.pages.*;
 import team_16.utilities.ConfigReader;
@@ -10,11 +11,7 @@ import team_16.utilities.ReusableMethods;
 public class TC_01 {
 
 
-    //Vendor "Inventory" secenegine tiklar
-    //Vendor "SKU" kutucuguna bir referans numarasi girer
-    //Vendor "Manage Stock?" kutucugunu isaretler
-    //Vendor "Stock Qty" kutusuna bir Integer deger girer
-    //Vendor "Allow Backorders?" dropdownundan "Allow" secenegini secer
+
     //Vendor "Downloadable" secenegine tiklar
     //Vendor "Name" kutusuna urunun ismini girer
     //Vendor "File " kutusuna ait " UPLOAD" butonuna tiklar
@@ -59,6 +56,7 @@ public class TC_01 {
         MyAccount myAccount = new MyAccount();
         StoreManagerPage storeManagerPage = new StoreManagerPage();
         InventoryPage inventoryPage = new InventoryPage();
+        ChooseImagePage chooseImagePage = new ChooseImagePage();
 
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
         homePage.signIn.click();
@@ -74,18 +72,49 @@ public class TC_01 {
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.AddNewSecenegi);
         ReusableMethods.scrollDownActions();
-        //Vendor "Add Product"a oldugunu dogrular
-        //Vendor "Simple Product" kutusunda "simple product'u secili gorur
-        //Vendor "Virtual" kutucugunu secer
-        //Vendor "Downloadable" kutucugunu secer
-        //Vendor "ProductTitle" kutusuna ekleyecegi urunun basligini yazar
-        //Vendor "Price($)" kutusuna urunun fiyatini yazar
-        //Vendor "Sale Price($)" kutusuna urunun indirimli fiyatini yazar
-        //Vendor "Short Description" kutusuna  kisa bir aciklama yapar
-        //Vendor "Description" kutusuna urunu tanitan bir aciklama yapar
-        //Vendor buyuk foto kutusuna urunun fotosunu yuklar
-        //Vendor kucuk foto kutusuna urunun fotosunu yuklar
-        //Vendor "Categories" kutucugunda urunune ait bir category secer
-        //Vendor "Product brands" kutucugundan bir marca ismi secer
+        assert storeManagerPage.AddProductYazisi.isDisplayed();
+        assert storeManagerPage.SimpleProductSecili.isDisplayed();
+        ReusableMethods.clickByJS(storeManagerPage.VirtualKutucugu);
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(storeManagerPage.DownloadableKutucugu);
+        ReusableMethods.waitFor(2);
+        storeManagerPage.ProductTitle.sendKeys(ConfigReader.getProperty("ProductTitle"));
+        storeManagerPage.Price.sendKeys(ConfigReader.getProperty("Price($)"));
+        storeManagerPage.SalePrice.sendKeys(ConfigReader.getProperty("SalePrice($)"));
+        Driver.getDriver().switchTo().frame(0);
+        ReusableMethods.waitFor(2);
+        storeManagerPage.ShortDescription.sendKeys("Lamparas antiguas");
+        ReusableMethods.waitFor(2);
+        Driver.getDriver().switchTo().defaultContent();
+        ReusableMethods.waitFor(2);
+        Driver.getDriver().switchTo().frame(1);
+        ReusableMethods.waitFor(2);
+        storeManagerPage.Description.sendKeys("Lamparas otomanos , todo esta echo a mano , se puede utilizar para habitaciones,para salas ext....");
+        ReusableMethods.waitFor(2);
+        Driver.getDriver().switchTo().parentFrame();
+        ReusableMethods.waitFor(2);
+
+
+
+        ReusableMethods.clickByJS(storeManagerPage.BuyukFoto);
+        chooseImagePage.MediaLibrary.click();
+        chooseImagePage.TuruncuFotoyuSec.click();
+        chooseImagePage.SELECTseciliFotoIcin.click();
+        storeManagerPage.KucukFoto.click();
+        chooseImagePage.MaviFotoyuSec.click();
+        chooseImagePage.ADDTOGALLERY.click();
+        ReusableMethods.clickByJS(storeManagerPage.CategoryAccessories);
+        ReusableMethods.clickByJS(storeManagerPage.ProductBrandsEspanya);
+        //Vendor "Inventory" secenegine tiklar
+        storeManagerPage.InventorySecenegi.click();
+        //Vendor "SKU" kutucuguna bir referans numarasi girer
+        inventoryPage.SKUkutucugu.sendKeys("complica8596");
+        //Vendor "Manage Stock?" kutucugunu isaretler
+        inventoryPage.ManagerStockKutusu.click();
+        //Vendor "Stock Qty" kutusuna bir Integer deger girer
+        inventoryPage.StockQtyKutusu.sendKeys("50");
+        //Vendor "Allow Backorders?" dropdownundan "Allow" secenegini secer
+        Select select = new Select(inventoryPage.AllowBackordersDropdown);
+        select.selectByVisibleText("Allow");
     }
 }

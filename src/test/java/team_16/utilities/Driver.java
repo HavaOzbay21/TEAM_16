@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Reporter;
+
 import java.time.Duration;
 public class Driver {
     //    Driver.getDriver(); -> driver
@@ -37,7 +39,13 @@ public class Driver {
         }
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(25));
-        driver.manage().window().maximize();
+//        try{
+//            driver.manage().window().maximize();
+//        }catch (Exception e){
+//            System.out.println("Windows Maximize yapilamadi");
+//            Reporter.log("Exception Yakalandi");
+//        }
+
         return driver;
     }
     //    closeDriver() is used to close the driver
