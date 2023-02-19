@@ -15,4 +15,7 @@ public class OrdersPage {
     @FindBy(xpath = "//h4[.='Orders']")
     public WebElement orderSayfasiYazisi;
 
+    @FindBy(xpath = "//*[@class=\"woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received order-success\"]")
+    public  WebElement orderComplete;
+
 }
