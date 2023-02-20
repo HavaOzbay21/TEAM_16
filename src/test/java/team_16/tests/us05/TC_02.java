@@ -1,6 +1,5 @@
 package team_16.tests.us05;
 
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -16,21 +15,19 @@ import team_16.utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class TC_01 {
-
+public class TC_02 {
 
     HomePage homePage = new HomePage();
     SignIn signIn= new SignIn();
     MyAccount myAccount= new MyAccount();
-AccountDetallesPage details= new AccountDetallesPage();
-
-
+    AccountDetallesPage details= new AccountDetallesPage();
 
 
 
 
     @Test
-    public void TC01() throws InterruptedException, IOException {
+    public void TCO1() throws IOException {
+
 
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
 
@@ -46,15 +43,34 @@ AccountDetallesPage details= new AccountDetallesPage();
 
         ReusableMethods.waitFor(3);
 
-
         new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
 
         ReusableMethods.waitFor(3);
 
         details.AccountDetails.click();
 
-        ReusableMethods.waitFor(3);
+        new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
+        details.firstnameozlem.clear();
+        details.firstnameozlem.sendKeys("Saniye", Keys.TAB, "Sezici", Keys.TAB, "Saniye", Keys.TAB, "lzmra2021@gmail.com");
 
-        Assert.assertTrue(details.detailsSayfasi.isDisplayed());
+        ReusableMethods.waitFor(10);
+
+        ReusableMethods.clickByJS(details.Savechanges);
+
+        ReusableMethods.waitFor(5);
+
+        //new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
+        // Assert.assertTrue(details.mensajesdechanges.isDisplayed());
+
+
+        Assert.assertEquals(details.mensajesdechanges.getText(), "Account details changed successfully.");
+        ReusableMethods.waitFor(2);
+
+        ReusableMethods.scrollIntoViewJS(details.mensajesdechanges);
+        ReusableMethods.getScreenshot("EkranGoruntusu");
     }
+
+
+
+
 }
