@@ -1,6 +1,5 @@
 package team_16.tests.us05;
 
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -16,23 +15,19 @@ import team_16.utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class TC_01 {
-
-
+public class TC_04 {
     HomePage homePage = new HomePage();
-    SignIn signIn= new SignIn();
-    MyAccount myAccount= new MyAccount();
-AccountDetallesPage details= new AccountDetallesPage();
+    SignIn signIn = new SignIn();
+    MyAccount myAccount = new MyAccount();
 
 
-
-
+    AccountDetallesPage details= new AccountDetallesPage();
+    ComparePage compare1 =new ComparePage();
 
 
     @Test
     public void TC01() throws InterruptedException, IOException {
-
-        Driver.getDriver().get(ConfigReader.getProperty("site_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("Site_url"));
 
 
         homePage.signIn.click();
@@ -46,15 +41,35 @@ AccountDetallesPage details= new AccountDetallesPage();
 
         ReusableMethods.waitFor(3);
 
-
         new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
 
         ReusableMethods.waitFor(3);
 
         details.AccountDetails.click();
 
+        details.currentpassworddetails.sendKeys("maria123@", Keys.TAB, "turquaz123@", Keys.TAB, "turquaz123@");
+
+        ReusableMethods.waitFor(10);
+
+        ReusableMethods.clickByJS(details.Savechanges);
+        // ReusableMethods.waitFor(3);
+        // Driver.getDriver().navigate().refresh();
         ReusableMethods.waitFor(3);
 
-        Assert.assertTrue(details.detailsSayfasi.isDisplayed());
+        //new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
+        // Assert.assertEquals(details.mensajesdechanges.getText(),"Account details changed succesfully.");
+        Assert.assertTrue(details.mensajesdechanges.isDisplayed());
+        Assert.assertEquals(details.mensajesdechanges.getText(), "Account details changed successfully.");
+        ReusableMethods.waitFor(2);
+
+        ReusableMethods.scrollIntoViewJS(details.mensajesdechanges);
+        ReusableMethods.getScreenshot("EkranGoruntusu");
     }
 }
+
+
+
+
+
+
+
