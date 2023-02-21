@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import team_16.utilities.Driver;
 
-public class ComparePage{
+public class git ComparePage{
 
     public ComparePage()
     {
