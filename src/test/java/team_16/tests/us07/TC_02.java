@@ -1,15 +1,9 @@
 package team_16.tests.us07;
 
-
 import org.openqa.selenium.By;
-
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
-
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import team_16.pages.HomePage;
 import team_16.pages.MyAccount;
@@ -22,9 +16,7 @@ import team_16.utilities.ReusableMethods;
 
 import java.util.List;
 
-public class TC_01 {
-
-
+public class TC_02 {
     HomePage homePage = new HomePage();
     SignIn signIn = new SignIn();
     MyAccount myAccount = new MyAccount();
@@ -62,66 +54,26 @@ public class TC_01 {
         }
         ReusableMethods.waitFor(5);
 
-        ReusableMethods.clickByJS(compare.CompareIconu6);
-
-        ReusableMethods.waitFor(10);
-
-        ReusableMethods.waitFor(5);
-        ReusableMethods.clickByJS(compare.compareButonu);
+        ReusableMethods.clickByJS(compare.startcompare);
         ReusableMethods.waitFor(5);
         new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.waitFor(10);
-        WebElement silineneleman = compare.comparebutonundansilineneleman;
-        ReusableMethods.verifyElementNotDisplayed(silineneleman);
-        ReusableMethods.waitFor(5);
-//
         ReusableMethods.clickByJS(compare.silmeiconu);
         ReusableMethods.waitFor(5);
+
         WebElement silineneleman1 = compare.urunsilinebilmesi;
         ReusableMethods.verifyElementNotDisplayed(silineneleman1);
-        ReusableMethods.waitFor(5);
         compare.searchButonuOzlem.sendKeys("bag", Keys.ENTER);
         ReusableMethods.waitFor(5);
         new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN, Keys.PAGE_DOWN, Keys.PAGE_DOWN).perform();
         ReusableMethods.waitFor(5);
         ReusableMethods.clickByJS(compare.CompareIconu5);
         ReusableMethods.waitFor(10);
-//        ReusableMethods.clickByJS(compare.compareButonu);
-//        ReusableMethods.waitFor(5);
-//        new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
-        ReusableMethods.clickByJS(compare.startcompare);
-        ReusableMethods.waitFor(10);
-        new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
-        ReusableMethods.waitFor(10);
+
         WebElement ekleneneleman = compare.uruneklemecompareurunu;
         ReusableMethods.verifyElementDisplayed(ekleneneleman);
         ReusableMethods.waitFor(10);
 
 
-//
-//       // ReusableMethods.clickByJS(compare.compareclean);
-//
-
-
-//        ReusableMethods.clickByJS(compare.CompareIconu3);
-//        ReusableMethods.waitFor(3);
-//
-//        ReusableMethods.clickByJS(compare.urunsayfasi);
-//        ReusableMethods.clickByJS(compare.CompareIconu4);
-//
-//        ReusableMethods.waitFor(3);
-//        ReusableMethods.clickByJS(compare.CompareIconu5);
-//        ReusableMethods.waitFor(5);
-//        ReusableMethods.clickByJS(compare.CompareIconu6);
-//
-//        ReusableMethods.waitFor(5);
-//        ReusableMethods.clickByJS(compare.startcompare);
-//        ReusableMethods.waitFor(10);
-//        new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
-
-
     }
-
 }
-
-
