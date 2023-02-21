@@ -26,11 +26,11 @@ public class ComparePage{
 
     @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[2]")
     public WebElement CompareIconu4;
-    @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[3]")
-    public WebElement CompareIconu5;
+//    @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[3]")
+//    public WebElement CompareIconu5;
     @FindBy(xpath = "(//*[@class='compare btn-product-icon'])[4]")
     public WebElement CompareIconu6;
-
+////a[@class='compare btn-product-icon']
     @FindBy(xpath = "//*[@class='products  row cols-lg-3 cols-md-3 cols-sm-2 cols-2']")
     public WebElement urunsayfasi;
 
@@ -40,6 +40,30 @@ public class ComparePage{
     public WebElement compareclean;
     @FindBy(xpath="//*[@class='btn btn-dark btn-rounded']")
     public WebElement startcompare;
+@FindBy(xpath = "//*[@class='compare-slider slider-wrapper']")
+    public WebElement compareurunlist;
+@FindBy(xpath="//*[@class='page-title']")
+    public WebElement comparesayfabasligi;
+
+
+@FindBy(xpath = "//*[@style='margin-right: 30px;']")
+    public WebElement comparelistsize;
+@FindBy(xpath = "(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[1]")
+    public WebElement comparebutonundansilineneleman;
+////*[@class='product-media'])[1]"
+    @FindBy(xpath = "(//*[@class='compare-action remove_from_compare'])[4]")
+public WebElement silmeiconu;
+@FindBy(xpath = "(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[4]")
+public WebElement urunsilinebilmesi;
+@FindBy(xpath = "(//*[@src='https://spendinggood.com/wp-content/uploads/2022/09/womens-fashion-handbag-1-300x300.jpg'])[1]")
+    public WebElement uruneklemecompareurunu;
+    @FindBy(xpath = "(//*[@title='Compare'])[5]")
+    public WebElement CompareIconu5;
+
+@FindBy( xpath = "//*[.='No products added to the compare']")
+    public WebElement elemanyok;
+
+
 }
 
 
