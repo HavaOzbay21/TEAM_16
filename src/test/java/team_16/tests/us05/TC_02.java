@@ -53,11 +53,12 @@ public class TC_02 {
         details.firstnameozlem.clear();
         details.firstnameozlem.sendKeys("Saniye", Keys.TAB, "Sezici", Keys.TAB, "Saniye", Keys.TAB, "lzmra2021@gmail.com");
 
-        ReusableMethods.waitFor(10);
+        ReusableMethods.waitFor(5);
+
 
         ReusableMethods.clickByJS(details.Savechanges);
 
-        ReusableMethods.waitFor(5);
+        ReusableMethods.waitFor(3);
 
         //new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
         // Assert.assertTrue(details.mensajesdechanges.isDisplayed());

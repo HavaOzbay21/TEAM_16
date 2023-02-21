@@ -36,7 +36,7 @@ public class BillingDetails {
     public WebElement placeOrder;
 
     @FindBy(xpath = "//*[.='Enter your code']")
-    public WebElement enterYourCode;
+    public WebElement enterYourCode1;
 
     @FindBy(xpath = "//*[@id=\"coupon_code\"]")
     public WebElement codeBoslugu;
