@@ -15,7 +15,7 @@ import team_16.utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class gitTC_04 {
+public class TC_04 {
     HomePage homePage = new HomePage();
     SignIn signIn = new SignIn();
     MyAccount myAccount = new MyAccount();
