@@ -12,42 +12,7 @@ public class TC_01 {
 
 
 
-    //Vendor "Downloadable" secenegine tiklar
-    //Vendor "Name" kutusuna urunun ismini girer
-    //Vendor "File " kutusuna ait " UPLOAD" butonuna tiklar
-    //Vendor "Download Limit" kutugunu default olarak "Unlimited" olarak gorur
-    //Vendor "Download Expiry" kutusunda olan "Never" secenegini default olarak gorur
-    //Vendor "Attributes" secenegine tiklar
-    //Vendor "Color" kutucugunu secer
-    //Vendor yeni acilan sayfada "SELECT ALL" butonuna tiklar
-    //Vendor "Color" kutusuna gelen tum renkleri gorur
-    //Vendor "SELECT NONE" butonuna tiklar
-    //Vendor sectigi butun renklerin silindigini gorur
-    //Vendor "ADD NEW" butonuna tiklar
-    //Vendor cikaln "iframe" eklemek istedigi rengi yazar
-    //Vendor "Aceptar"a tiklar
-    //Vendor ekledigi rengi "Color" kutuna geldigini gorur
-    //Vendor  "Size" a tiklar
-    //Vendor yeni acilan "Size" sayfasinda "SELECT ALL" a tiklar
-    //Vendor "Size" kutusuna sistemde kayitli olan butun bedenleri gorur
-    //Vendor "SELECT NONE" e tiklar
-    //Vendor butun bedenlerin silindigini gorur
-    //Vendor "ADD NEW" e tiklar
-    //Vendor cikan "iframe" kutusuna eklemek istedigi bedeni girer
-    //Vendor "Aceptar"a tiklar
-    //Vendor ekledigi yeni bedeni "Size" kutusunda gorur
-    //Vendor "SEO" secenegine tiklar
-    //Vendor "Enter a focus keyword" kutusuna anahtar bir kelime girer
-    //Vendor "Meta description" kutusa bazi degerler girer
-    //Vendor "Toptan Ürün Gösterme Ayarları" secenegine tiklar
-    //Vendor "Piece Type" dropdownundan "Piece" i secer
-    //Vendor "Parça Başına Birimler" kutusuna bir INTEGER deger girer
-    //Vendor " Min. Sipariş Miktarı?" kutusuna bir INTEGER deger girer
-    //Vendor "Advanced" secenegine tiklar
-    //Vendor " Menu Order" kutusuna bir INTEGER deger girer
-    //Vendor "Purchase Note" kutusuna bir not girer
-    //Vendor "SUBMIT" butonuna tiklar
-    //Vendor islemin tamamlandigi onayini gorur
+
 
     @Test
     public void testTC_01() {
@@ -57,6 +22,10 @@ public class TC_01 {
         StoreManagerPage storeManagerPage = new StoreManagerPage();
         InventoryPage inventoryPage = new InventoryPage();
         ChooseImagePage chooseImagePage = new ChooseImagePage();
+        AttributesPage attributesPage = new AttributesPage();
+        SEOPage seoPage = new SEOPage();
+        ToptanUrunGostermeAyarlarıPage toptanUrunGostermeAyarlarıPage = new ToptanUrunGostermeAyarlarıPage();
+        AdvancedPage advancedPage = new AdvancedPage();
 
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
         homePage.signIn.click();
@@ -77,44 +46,94 @@ public class TC_01 {
         ReusableMethods.clickByJS(storeManagerPage.VirtualKutucugu);
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(storeManagerPage.DownloadableKutucugu);
+        ReusableMethods.clickByJS(storeManagerPage.DownloadableKutucugu);
         ReusableMethods.waitFor(2);
         storeManagerPage.ProductTitle.sendKeys(ConfigReader.getProperty("ProductTitle"));
         storeManagerPage.Price.sendKeys(ConfigReader.getProperty("Price($)"));
         storeManagerPage.SalePrice.sendKeys(ConfigReader.getProperty("SalePrice($)"));
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(storeManagerPage.CategoryLAMPARAS);
         Driver.getDriver().switchTo().frame(0);
         ReusableMethods.waitFor(2);
         storeManagerPage.ShortDescription.sendKeys("Lamparas antiguas");
         ReusableMethods.waitFor(2);
-        Driver.getDriver().switchTo().defaultContent();
-        ReusableMethods.waitFor(2);
-        Driver.getDriver().switchTo().frame(1);
-        ReusableMethods.waitFor(2);
-        storeManagerPage.Description.sendKeys("Lamparas otomanos , todo esta echo a mano , se puede utilizar para habitaciones,para salas ext....");
-        ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().parentFrame();
-        ReusableMethods.waitFor(2);
-
-
-
-        ReusableMethods.clickByJS(storeManagerPage.BuyukFoto);
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(storeManagerPage.KucukFoto);
+        ReusableMethods.waitFor(5);
         chooseImagePage.MediaLibrary.click();
-        chooseImagePage.TuruncuFotoyuSec.click();
-        chooseImagePage.SELECTseciliFotoIcin.click();
-        storeManagerPage.KucukFoto.click();
+        ReusableMethods.waitFor(5);
         chooseImagePage.MaviFotoyuSec.click();
+        ReusableMethods.waitFor(5);
         chooseImagePage.ADDTOGALLERY.click();
-        ReusableMethods.clickByJS(storeManagerPage.CategoryAccessories);
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(storeManagerPage.BuyukFoto);
+        ReusableMethods.clickByJS(chooseImagePage.UploadFiles);
+        chooseImagePage.SELECTFILESBuyukFoto.click();
+        String pathBuyukFoto = "C:\\Users\\havao\\OneDrive\\Masaüstü\\Screenshot 2023-02-14 123805.png";
+        ReusableMethods.uploadFilePath(pathBuyukFoto);
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(chooseImagePage.SELECTseciliFotoIcin);
+        ReusableMethods.waitFor(5);
+
+        Driver.getDriver().switchTo().frame(1);
+        ReusableMethods.waitFor(5);
+        ReusableMethods.scrollDownActions();
+        storeManagerPage.ShortDescription.sendKeys("Lamparas otomanos ,todo esta echo a mano , se puede utilizar para habitaciones,para salas ext....");
+        ReusableMethods.waitFor(5);
+        Driver.getDriver().switchTo().parentFrame();
+        ReusableMethods.waitFor(5);
+
         ReusableMethods.clickByJS(storeManagerPage.ProductBrandsEspanya);
-        //Vendor "Inventory" secenegine tiklar
         storeManagerPage.InventorySecenegi.click();
-        //Vendor "SKU" kutucuguna bir referans numarasi girer
-        inventoryPage.SKUkutucugu.sendKeys("complica8596");
-        //Vendor "Manage Stock?" kutucugunu isaretler
+        inventoryPage.SKUkutucugu.sendKeys("codigoo");
         inventoryPage.ManagerStockKutusu.click();
-        //Vendor "Stock Qty" kutusuna bir Integer deger girer
+        inventoryPage.StockQtyKutusu.clear();
         inventoryPage.StockQtyKutusu.sendKeys("50");
-        //Vendor "Allow Backorders?" dropdownundan "Allow" secenegini secer
         Select select = new Select(inventoryPage.AllowBackordersDropdown);
         select.selectByVisibleText("Allow");
+        ReusableMethods.clickByJS(storeManagerPage.AttributesSecenegi);
+        ReusableMethods.clickByJS(attributesPage.ColorSecenegi);
+        ReusableMethods.clickByJS(attributesPage.SelectAllSecenegi);
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(attributesPage.SelectNoneSecenegi);
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(attributesPage.AddNewSecenegi);
+        ReusableMethods.waitFor(5);
+        Driver.getDriver().switchTo().alert().sendKeys("colorinss");
+        ReusableMethods.waitFor(2);
+        Driver.getDriver().switchTo().alert().accept();
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(attributesPage.SizeSecenegi);
+        ReusableMethods.clickByJS(attributesPage.SelectAllSizeSecenegi);
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(attributesPage.SelectNoneSizeSecenegi);
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(attributesPage.AddNewSizeSecenegi);
+        ReusableMethods.waitFor(15);
+        Driver.getDriver().switchTo().alert().sendKeys("laargoo");
+        ReusableMethods.waitFor(2);
+        Driver.getDriver().switchTo().alert().accept();
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(storeManagerPage.SEOSecenegi);
+        seoPage.EnterAFocusKeywordKutucugu.sendKeys("REGALOS");
+        seoPage.MetaDescriptionKutucugu.sendKeys("regalos diferentes");
+        ReusableMethods.clickByJS(storeManagerPage.ToptanUrunGostermeAyarlarıSecenegi);
+        Select select1 = new Select(toptanUrunGostermeAyarlarıPage.PieceTypeDropdown);
+        select1.selectByVisibleText("Piece");
+        toptanUrunGostermeAyarlarıPage.UnitsPerPieceKutucugu.clear();
+        toptanUrunGostermeAyarlarıPage.UnitsPerPieceKutucugu.sendKeys("50");
+        toptanUrunGostermeAyarlarıPage.MinOrderQuantityKutucugu.clear();
+        toptanUrunGostermeAyarlarıPage.MinOrderQuantityKutucugu.sendKeys("1");
+        ReusableMethods.waitFor(2);
+        ReusableMethods.clickByJS(storeManagerPage.AdvancedSecenegi);
+        ReusableMethods.waitFor(2);
+        advancedPage.MenuOrderKutucugu.sendKeys("1");
+        ReusableMethods.waitFor(2);
+        advancedPage.PurchaseNoteKutucugu.sendKeys("GRACIAS POR SU COMPRA");
+        ReusableMethods.clickByJS(storeManagerPage.SUBMITButonu);
+        ReusableMethods.waitFor(2);
+        assert storeManagerPage.EditProductGorunuyormu.isDisplayed();
+
     }
 }

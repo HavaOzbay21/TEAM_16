@@ -50,11 +50,13 @@ public class ChooseImagePage {
 
 
     //Hava
-    @FindBy(xpath = "//button[@id='__wp-uploader-id-1']") public WebElement SELECTFILES;
+    @FindBy(xpath = "//button[@id='__wp-uploader-id-4']") public WebElement SELECTFILESBuyukFoto;
+    @FindBy(xpath = "//button[@id='__wp-uploader-id-7']") public WebElement SELECTFILESKucukFoto;
     @FindBy(xpath = "//button[@id='menu-item-browse']")public WebElement MediaLibrary;
-    @FindBy(xpath = "(//li[@data-id='21920'])[2]") public WebElement MaviFotoyuSec;
+    @FindBy(xpath = "(//button[@id='menu-item-upload'])[2]") public WebElement UploadFiles;
+    @FindBy(xpath = "(//div[@class='thumbnail'])[1]") public WebElement MaviFotoyuSec;
     @FindBy(xpath = "(//div[@class='thumbnail'])[2]") public WebElement TuruncuFotoyuSec;
-    @FindBy(xpath = "(//div[@class='media-toolbar-primary search-form'])[2]") public WebElement SELECTseciliFotoIcin;
+    @FindBy(xpath = "//button[text()='Select']") public WebElement SELECTseciliFotoIcin;
     @FindBy(xpath = "(//button[text()='Add to Gallery'])[2]") public WebElement ADDTOGALLERY;
 
 }
