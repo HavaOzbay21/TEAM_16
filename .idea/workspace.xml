@@ -5,21 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ChooseImagePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/AttributesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/AttributesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/ChooseImagePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ChooseImagePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/InventoryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/StoreManagerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/StoreManagerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_03__3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_03__3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_04.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us16/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us16/TC_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/ReusableMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/StoreManagerPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/StoreManagerPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_03__3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_03__3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_04.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us16/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us16/TC_01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Hava.Screenshots/20230215115322.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Hava.Screenshots/20230215115327.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Hava.Screenshots/20230215115336.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ReusableMethods.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +71,31 @@
       <recent name="team_16.tests.us18" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC_04.testTC_04">
+  <component name="RunManager" selected="TestNG.C:/Users/havao/IdeaProjects/TEAM_16/testnghava.xml">
+    <configuration name="C:/Users/havao/IdeaProjects/TEAM_16/testnghava.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testnghava.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.FailedReporter" />
+        <listener class="org.testng.reporters.SuiteHTMLReporter" />
+        <listener class="org.testng.reporters.TestHTMLReporter" />
+      </listeners>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TC_01.testTC_01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
@@ -87,24 +114,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TC_02" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_03" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_04" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
+    <configuration name="TC_03__3.testTC_03_3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team_16.tests.us15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team_16.tests.us15" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us15.TC_03__3" />
+      <option name="METHOD_NAME" value="testTC_03_3" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -129,13 +150,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC_05.testTC_05" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team_16.tests.us15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team_16.tests.us15" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us15.TC_05" />
+      <option name="METHOD_NAME" value="testTC_05" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/havao/IdeaProjects/TEAM_16/testnghava.xml" />
+      <item itemvalue="TestNG.TC_01.testTC_01" />
+      <item itemvalue="TestNG.TC_03__3.testTC_03_3" />
+      <item itemvalue="TestNG.TC_04.testTC_04" />
+      <item itemvalue="TestNG.TC_05.testTC_05" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TC_04.testTC_04" />
+        <item itemvalue="TestNG.C:/Users/havao/IdeaProjects/TEAM_16/testnghava.xml" />
         <item itemvalue="TestNG.TC_01.testTC_01" />
-        <item itemvalue="TestNG.TC_04" />
-        <item itemvalue="TestNG.TC_03" />
-        <item itemvalue="TestNG.TC_02" />
+        <item itemvalue="TestNG.TC_05.testTC_05" />
+        <item itemvalue="TestNG.TC_04.testTC_04" />
+        <item itemvalue="TestNG.TC_03__3.testTC_03_3" />
       </list>
     </recent_temporary>
   </component>
