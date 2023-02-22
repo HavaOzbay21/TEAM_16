@@ -39,10 +39,10 @@ public class SpendinggoodAddProductPage{
     @FindBy(xpath = "(//li[@data-id='19763'])[2]")
     public WebElement resim;
 
-    @FindBy(xpath = "//button[@class='button media-button button-primary button-large media-button-select']")
+    @FindBy(xpath = "//button[.='Select']")
     public WebElement selectButton;
 
-    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-2']/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/button[1]")
+    @FindBy(xpath = "(//button[text()='Add to Gallery'])[2]")
     public WebElement addToGallery;
 
     @FindBy(id= "wcfm_products_simple_submit_button")
@@ -58,10 +58,12 @@ public class SpendinggoodAddProductPage{
     @FindBy(xpath = "//body/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[1]/div[2]/div[3]/ul[1]/li[1]/input[1]")
     public WebElement accessoriesButton;
 
-    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-5']/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]")
+    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-2']/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]")
     public WebElement BykResimKolye;
 
-    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-8']/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]")
+
+
+    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-2']/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]")
     public WebElement KckResimKolye;
 
     @FindBy(xpath = "//tbody/tr[1]/td[2]/a[1]/img[1]")

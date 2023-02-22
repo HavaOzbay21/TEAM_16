@@ -34,28 +34,33 @@ public class TC_02 {
         ReusableMethods.waitFor(3);
         //Assert.assertTrue(SpendinggoodAddProductPage.ProductTitle.isDisplayed());
 
+        actions.moveToElement(SpendinggoodAddProductPage.kucukFoto).perform();
+        SpendinggoodAddProductPage.kucukFoto.click();
+        ReusableMethods.waitFor(5);
 
+        actions.moveToElement(SpendinggoodAddProductPage.KckResimKolye).perform();
+        ReusableMethods.waitFor(5);
+        SpendinggoodAddProductPage.KckResimKolye.click();
+
+        actions.moveToElement(SpendinggoodAddProductPage.addToGallery).perform();
+        ReusableMethods.waitFor(5);
+        SpendinggoodAddProductPage.addToGallery.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.buyukFoto).perform();
+        ReusableMethods.waitFor(5);
         SpendinggoodAddProductPage.buyukFoto.click();
 
-        actions.moveToElement(SpendinggoodAddProductPage.MediaLibrary).perform();
-        SpendinggoodAddProductPage.MediaLibrary.click();
+//        actions.moveToElement(SpendinggoodAddProductPage.MediaLibrary).perform();
+//        SpendinggoodAddProductPage.MediaLibrary.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.BykResimKolye).perform();
+        ReusableMethods.waitFor(5);
         SpendinggoodAddProductPage.BykResimKolye.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.selectButton).perform();
         SpendinggoodAddProductPage.selectButton.click();
 
-        actions.moveToElement(SpendinggoodAddProductPage.kucukFoto).perform();
-        SpendinggoodAddProductPage.kucukFoto.click();
 
-        actions.moveToElement(SpendinggoodAddProductPage.KckResimKolye).perform();
-        SpendinggoodAddProductPage.KckResimKolye.click();
-
-        actions.moveToElement(SpendinggoodAddProductPage.addToGallery).perform();
-        SpendinggoodAddProductPage.addToGallery.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.categories).perform();
         SpendinggoodAddProductPage.categories.click();

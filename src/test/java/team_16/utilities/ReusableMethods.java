@@ -335,11 +335,12 @@ public class ReusableMethods {
 //        loginPage.signIn.click();
 //    }
 
+
     public static void LoginVendor() {
 
         SpendinggoodHomePage SpendinggoodHomePage = new SpendinggoodHomePage();
-        SpendinggoodMyAccountPage SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();
-        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
+//        SpendinggoodMyAccountPage SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();
+//        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
 
 
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
@@ -359,7 +360,7 @@ public class ReusableMethods {
 
 
         JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
-        jse.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+//        jse.executeScript("window.scrollTo(0,document.body.scrollHeight)");
         SpendinggoodHomePage.myAccount.click();
         waitFor(5);
         SpendinggoodMyAccountPage.storeManager.click();

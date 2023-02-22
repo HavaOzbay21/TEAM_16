@@ -10,11 +10,17 @@ public class SpendinggoodStoreManagerPage {
      public SpendinggoodStoreManagerPage(){
          PageFactory.initElements(Driver.getDriver(), this);
      }
-    @FindBy(xpath="(//span[@class='text'])[4]")
+
+      @FindBy(xpath="(//span[@class='text'])[4]")
+//      @FindBy(xpath = "//a[@href='https://spendinggood.com/store-manager/product/']")
     public WebElement product;
 
-    @FindBy(xpath="(//*[text()='Add New'])[1]")
+//    @FindBy(xpath = "//a[@id='add_new_product_dashboard']")
+//    public WebElement addNew;
+
+    @FindBy(partialLinkText = "Add New")
     public WebElement addNew;
+
 
     @FindBy(xpath = "//select[@id='product_type']")
     public  WebElement  simpleProduct;

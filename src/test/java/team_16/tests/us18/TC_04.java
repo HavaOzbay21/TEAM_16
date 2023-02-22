@@ -39,11 +39,21 @@ public class TC_04 {
         SpendinggoodAddProductPage.buttonText.sendKeys("nice", Keys.ENTER);
         SpendinggoodAddProductPage.salePrice.sendKeys("200", Keys.ENTER);
 
-        actions.moveToElement(SpendinggoodAddProductPage.buyukFoto).perform();
-        SpendinggoodAddProductPage.buyukFoto.click();
+        actions.moveToElement(SpendinggoodAddProductPage.kucukFoto).perform();
+        SpendinggoodAddProductPage.kucukFoto.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.MediaLibrary).perform();
         SpendinggoodAddProductPage.MediaLibrary.click();
+
+        actions.moveToElement(SpendinggoodAddProductPage.KckResimKolye).perform();
+        SpendinggoodAddProductPage.KckResimKolye.click();
+
+        actions.moveToElement(SpendinggoodAddProductPage.addToGallery).perform();
+        SpendinggoodAddProductPage.addToGallery.click();
+
+        actions.moveToElement(SpendinggoodAddProductPage.buyukFoto).perform();
+        SpendinggoodAddProductPage.buyukFoto.click();
+
 
         actions.moveToElement(SpendinggoodAddProductPage.iskarpin).perform();
         SpendinggoodAddProductPage.iskarpin.click();
@@ -51,14 +61,7 @@ public class TC_04 {
         actions.moveToElement(SpendinggoodAddProductPage.selectButton).perform();
         SpendinggoodAddProductPage.selectButton.click();
 
-        actions.moveToElement(SpendinggoodAddProductPage.kucukFoto).perform();
-        SpendinggoodAddProductPage.kucukFoto.click();
 
-        actions.moveToElement(SpendinggoodAddProductPage.KckResimKolye).perform();
-        SpendinggoodAddProductPage.KckResimKolye.click();
-
-        actions.moveToElement(SpendinggoodAddProductPage.addToGallery).perform();
-        SpendinggoodAddProductPage.addToGallery.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.categories).perform();
         SpendinggoodAddProductPage.categories.click();

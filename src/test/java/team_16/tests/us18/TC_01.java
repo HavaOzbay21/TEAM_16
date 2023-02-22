@@ -24,6 +24,7 @@ public class TC_01 {
         Select simpleDropdown=new Select(SpendinggoodStoreManagerPage.simpleProduct);
         simpleDropdown.selectByVisibleText("External/Affiliate Product");
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(3);
         Assert.assertTrue(SpendinggoodAddProductPage.url.isDisplayed());
         Driver.closeDriver();
     }

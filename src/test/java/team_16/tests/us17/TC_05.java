@@ -7,15 +7,19 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import team_16.pages.hacer.SpendinggoodAddProductPage;
 import team_16.pages.hacer.SpendinggoodStoreManagerPage;
+import team_16.pages.hacer.imagePage;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
 public class TC_05 {
-    SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
-    SpendinggoodAddProductPage SpendinggoodAddProductPage = new SpendinggoodAddProductPage();
+    SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage;
+    SpendinggoodAddProductPage SpendinggoodAddProductPage;
 
     @Test
     public void TC05() {
+        SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
+        SpendinggoodAddProductPage = new SpendinggoodAddProductPage();
+
 
         //yeni color ve size eklenebilmeli
         //variantsa tiklanarak eklenen attributes gorulmeli
@@ -30,21 +34,21 @@ public class TC_05 {
         simpleDropdown.selectByVisibleText("Variable Product");
         ReusableMethods.waitFor(3);
 
-
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage .buyukFoto);
+        ReusableMethods.clickByJS( SpendinggoodAddProductPage.kucukFoto);
         ReusableMethods.waitFor(3);
         ReusableMethods.clickByJS(SpendinggoodAddProductPage.MediaLibrary);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage.greenTshirt);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS( SpendinggoodAddProductPage.kucukFoto);
         ReusableMethods.waitFor(3);
         ReusableMethods.clickByJS( SpendinggoodAddProductPage.blueTshirt);
         ReusableMethods.waitFor(3);
         ReusableMethods.clickByJS(SpendinggoodAddProductPage.addToGallery);
         ReusableMethods.waitFor(3);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage .buyukFoto);
+        ReusableMethods.waitFor(3);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.greenTshirt);
+        ReusableMethods.waitFor(3);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
+        ReusableMethods.waitFor(3);
+
 
 //        actions.sendKeys(Keys.PAGE_DOWN).perform();
 //        actions.sendKeys(Keys.PAGE_DOWN).perform();

@@ -78,7 +78,7 @@ public class TC_02 {
         ReusableMethods.verifyElementDisplayed(adresses.alertMessage);
 
         ReusableMethods.scrollIntoViewJS(adresses.alertMessage);
-        ReusableMethods.getScreenshot("EkranGoruntusu");
+        //ReusableMethods.getScreenshot("EkranGoruntusu");
     }
 
     @AfterTest

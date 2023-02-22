@@ -14,12 +14,16 @@ import team_16.utilities.ReusableMethods;
 import java.io.IOException;
 
 public class TC_03 {
-    SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
-    SpendinggoodAddProductPage SpendinggoodAddProductPage = new SpendinggoodAddProductPage();
-    SpendinggoodMyAccountPage SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();
+    SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage;
+    SpendinggoodAddProductPage SpendinggoodAddProductPage;
+    SpendinggoodMyAccountPage SpendinggoodMyAccountPage;
 
     @Test
     public void TC03() throws IOException {
+        SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
+         SpendinggoodAddProductPage = new SpendinggoodAddProductPage();
+         SpendinggoodMyAccountPage = new SpendinggoodMyAccountPage();
+
 
         //us 15 deki zorunlu alanlar
         ReusableMethods.LoginVendor();
@@ -35,27 +39,32 @@ public class TC_03 {
 
         SpendinggoodAddProductPage.ProductTitle.sendKeys("kolye", Keys.ENTER);
 
-
-        actions.moveToElement(SpendinggoodAddProductPage.buyukFoto).perform();
-        SpendinggoodAddProductPage.buyukFoto.click();
+        actions.moveToElement(SpendinggoodAddProductPage.kucukFoto).perform();
+        SpendinggoodAddProductPage.kucukFoto.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.MediaLibrary).perform();
         SpendinggoodAddProductPage.MediaLibrary.click();
-
-        actions.moveToElement(SpendinggoodAddProductPage.BykResimKolye).perform();
-        SpendinggoodAddProductPage.BykResimKolye.click();
-
-        actions.moveToElement(SpendinggoodAddProductPage.selectButton).perform();
-        SpendinggoodAddProductPage.selectButton.click();
-
-        actions.moveToElement(SpendinggoodAddProductPage.kucukFoto).perform();
-        SpendinggoodAddProductPage.kucukFoto.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.KckResimKolye).perform();
         SpendinggoodAddProductPage.KckResimKolye.click();
 
         actions.moveToElement(SpendinggoodAddProductPage.addToGallery).perform();
         SpendinggoodAddProductPage.addToGallery.click();
+
+        actions.moveToElement(SpendinggoodAddProductPage.buyukFoto).perform();
+        SpendinggoodAddProductPage.buyukFoto.click();
+
+//        actions.moveToElement(SpendinggoodAddProductPage.MediaLibrary).perform();
+//        SpendinggoodAddProductPage.MediaLibrary.click();
+
+        actions.moveToElement(SpendinggoodAddProductPage.BykResimKolye).perform();
+        ReusableMethods.waitFor(3);
+        SpendinggoodAddProductPage.BykResimKolye.click();
+
+        actions.moveToElement(SpendinggoodAddProductPage.selectButton).perform();
+        SpendinggoodAddProductPage.selectButton.click();
+
+
 
         actions.moveToElement(SpendinggoodAddProductPage.categories).perform();
         SpendinggoodAddProductPage.categories.click();
