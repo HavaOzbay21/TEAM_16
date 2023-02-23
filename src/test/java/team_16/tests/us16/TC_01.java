@@ -110,7 +110,7 @@ public class TC_01 {
         ReusableMethods.clickByJS(attributesPage.SelectNoneSizeSecenegi);
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSizeSecenegi);
-        ReusableMethods.waitFor(15);
+        ReusableMethods.waitFor(5);
         Driver.getDriver().switchTo().alert().sendKeys("laargoo");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
