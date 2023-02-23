@@ -1,6 +1,5 @@
 package team_16.tests.us08;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -12,7 +11,7 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
-public class TC_01 {
+public class US08 {
     SignIn signIn = new SignIn();
     HomePage homePage = new HomePage();
     Urunler urunler = new Urunler();
@@ -98,7 +97,7 @@ public class TC_01 {
         ReusableMethods.clickByJS(billingDetails.firstName);
         billingDetails.firstName.clear();
         billingDetails.firstName.sendKeys("hamit", Keys.TAB,
-                ("sevsay"), Keys.TAB, "anka aş");
+              ("sevsay"), Keys.TAB, "anka aş",Keys.TAB);
         Select options = new Select(billingDetails.countryRegion);
         options.selectByValue("GB");
         billingDetails.streetAddress.sendKeys(ConfigReader.getProperty("street"), Keys.TAB, ConfigReader.getProperty("unit"),
@@ -110,11 +109,13 @@ public class TC_01 {
         Thread.sleep(3000);
         Driver.getDriver().findElement(By.xpath("//button[@class='button alt']")).click();
         // "Thank you. Your order has been received" yazısını görüntüler.
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         // 10- Kullanıcı Order Complete sayfasında siparişine ilişkin sipariş numarasını görüntüler.
         Thread.sleep(3000);
         Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//i[@class='fas fa-check']")).isDisplayed());
         Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//span[.='Order number']")).isDisplayed());
+
+
 
 
     }

@@ -1,6 +1,5 @@
-package team_16.tests.us08;
+package team_16.tests.us09;
 
-import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -12,10 +11,7 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
-import java.security.Key;
-
-public class US_09 {
-
+public class US09 {
     VendorRegistration vendorRegistration = new VendorRegistration();
 
     SignIn signIn = new SignIn();
@@ -70,7 +66,7 @@ public class US_09 {
 
         Thread.sleep(3000);
         Driver.getDriver().navigate().back();//register sayfasına geri geldik
-       // Driver.getDriver().get("https://spendinggood.com/vendor-register/");
+        // Driver.getDriver().get("https://spendinggood.com/vendor-register/");
         Thread.sleep(3000);
         registrationEmailKutusu.click();
         Thread.sleep(3000);
@@ -125,5 +121,4 @@ public class US_09 {
 
 
     }
-
 }

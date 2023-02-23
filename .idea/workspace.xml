@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="" />
+    <list default="true" id="0bb8ae86-9a60-4f4b-8d96-feea8731d9a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TEAM_16.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TEAM_16.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,11 +26,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="Fatih" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,7 +48,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -57,50 +60,8 @@
       <recent name="team_16.tests.us18" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TC_04.testTC_04">
-    <configuration name="TC_01.testTC_01" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TEAM_16" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team_16.tests.us16.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="team_16.tests.us16" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us16.TC_01" />
-      <option name="METHOD_NAME" value="testTC_01" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_02" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_03" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_04" type="TestNG" temporary="true" nameIsGenerated="true">
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC_04.testTC_04" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TC_01.testTC_01 (1)">
+    <configuration name="TC_01.testTC_01 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <extension name="coverage">
         <pattern>
@@ -109,9 +70,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="team_16.tests.us15" />
-      <option name="MAIN_CLASS_NAME" value="team_16.tests.us15.TC_04" />
-      <option name="METHOD_NAME" value="testTC_04" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us15.TC_01" />
+      <option name="METHOD_NAME" value="testTC_01" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_01.testTC_01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_02.testTC_02" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_04.testTC_04" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_05.testTC_05" type="TestNG" temporary="true" nameIsGenerated="true">
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -120,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TC_01.testTC_01 (1)" />
         <item itemvalue="TestNG.TC_04.testTC_04" />
-        <item itemvalue="TestNG.TC_04" />
-        <item itemvalue="TestNG.TC_03" />
-        <item itemvalue="TestNG.TC_02" />
+        <item itemvalue="TestNG.TC_02.testTC_02" />
         <item itemvalue="TestNG.TC_01.testTC_01" />
+        <item itemvalue="TestNG.TC_05.testTC_05" />
       </list>
     </recent_temporary>
   </component>
