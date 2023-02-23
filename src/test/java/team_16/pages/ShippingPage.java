@@ -13,6 +13,41 @@ public class ShippingPage {
     }
 
 
+    @FindBy (xpath = "//*[@id=\"shipping_first_name\"]")
+    public WebElement namebutonu;
+
+
+    @FindBy (xpath ="//span[@id='select2-shipping_country-container']")
+    public WebElement Countrybutonu;
+
+    @FindBy (xpath="(//*[@id=\"shipping_address_1\"])")
+    public  WebElement Adresbutonu_1;
+
+    @FindBy (xpath = "(//*[@id=\"select2-shipping_state-container\"])")
+    public WebElement Country_Opt;
+
+    @FindBy (xpath = "(//*[@class=\"btn btn-dark btn-rounded btn-sm\"])")
+    public  WebElement Sonbuton;
+
+    @FindBy (xpath = "(//*[@class=\"input-text \"])[3]")
+    public WebElement CompanyName;
+
+    @FindBy (xpath = "(//*[@class=\"btn btn-dark btn-rounded btn-sm\"])")
+    public WebElement SaveAddress;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
