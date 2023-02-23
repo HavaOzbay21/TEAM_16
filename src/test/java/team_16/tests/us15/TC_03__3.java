@@ -9,29 +9,6 @@ import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
 public class TC_03__3 {
-
-    //Vendor siteye gider
-    //Vendor sag ust kisimdaki "Sign In" e tiklar
-    //Vendor "SIGN IN - SIGN-UP" sayfasini gorur
-    //Vendor "SIGN IN" secenegini secili gorur
-    //Vendor "Username or email address" kismina kayitli emaili girer
-    //Vendor "Password" bolumune sifresini girer
-    //Vendor "SIGN IN" butonuna tiklar
-    //Vendor  acilan sayfada"My Account"a tiklar
-    //Vendor "My Account" sayfasini gorur
-    //Vendor "Store Manager"e tiklar
-    //Vendor "Store Manager" sayfasini gorur
-    //Vendor "Products" segmesinin uzerine gelir
-    //Vendor products'un uzerindeyken gelen  "Add New" segenegine tiklar
-    //Vendor acilan  sayfada en altina iner
-    //Vendor "Shipping" secenegini tiklar
-    //Vendor "Weight(kg)" kutusuna bir INTEGER deger girer
-    //Vendor "Dimensions(cm)" ait "Length"kutucuguna bir INTEGER  deger girer
-    //Vendor "Dimensions(cm)" ait "Width"kutucuguna bir INTEGER  deger girer
-    //Vendor "Dimensions(cm)" ait "Height"kutucuguna bir INTEGER  deger girer
-    //Vendor "Shipping class" ait kutucukta default olarak secilen "No shipping class" secenegini gorur
-    //Vendor "Processing Time" dropdownundan herhangi bir secenegi secer
-
     @Test
     public void testTC_03_3() {
         HomePage homePage = new HomePage();
