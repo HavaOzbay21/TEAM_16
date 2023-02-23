@@ -66,4 +66,5 @@ public class BillingAddress {
     @FindBy (xpath = "//*[@data-id='billing_country']")
     public WebElement alertCountry;
 
+
 }
