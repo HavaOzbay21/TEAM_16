@@ -10,6 +10,9 @@ import team_16.pages.hacer.SpendinggoodHomePage;
 import team_16.pages.hacer.SpendinggoodMyAccountPage;
 import team_16.pages.hacer.SpendinggoodStoreManagerPage;
 
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -403,8 +406,27 @@ public static String takeScreenshotOfElementH(WebElement element) throws IOExcep
         // SpendinggoodStorePage.addNew.click();
         waitFor(5);
 
+    }
 
-
+    public static void uploadFilePath(String filePath){
+        try{
+            StringSelection stringSelection = new StringSelection(filePath);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection,null);
+            Robot robot = new Robot();
+            //pressing ctrl+v
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_V);
+            //releasing ctrl+v
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            robot.keyRelease(KeyEvent.VK_V);
+            System.out.println("PASSED");
+            //pressing enter
+            robot.keyPress(KeyEvent.VK_ENTER);
+            //releasing enter
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            System.out.println("ENTER");
+        }catch (Exception e){
+        }
     }
 
 }

@@ -54,7 +54,7 @@ public class InventoryPage {
     @FindBy(xpath = "//select[@id='stock_status']") public WebElement StockStatusDropdown;
     @FindBy(xpath = "//input[@id='stock_qty']") public WebElement StockQtyKutusu;
     @FindBy(xpath = "//input[@id='sold_individually']") public WebElement SoldIndividuallyKutucugu;
-    @FindBy(xpath = "(//option[text()='Do not Allow'])[1]") public WebElement AllowBackordersDropdown;
+    @FindBy(xpath = "//select[@id='backorders']") public WebElement AllowBackordersDropdown;
 
 
 }
