@@ -47,7 +47,7 @@ public class TC_04 {
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSecenegi);
         ReusableMethods.waitFor(10);
-        Driver.getDriver().switchTo().alert().sendKeys("88895");
+        Driver.getDriver().switchTo().alert().sendKeys("uuuuu");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(5);
@@ -58,7 +58,7 @@ public class TC_04 {
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSizeSecenegi);
         ReusableMethods.waitFor(10);
-        Driver.getDriver().switchTo().alert().sendKeys("99995");
+        Driver.getDriver().switchTo().alert().sendKeys("yyyy");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(2);
