@@ -1,5 +1,7 @@
 package team_16.tests.us05;
 
+
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -17,21 +19,21 @@ import java.io.IOException;
 
 public class TC_02 {
 
-    HomePage homePage = new HomePage();
-    SignIn signIn= new SignIn();
-    MyAccount myAccount= new MyAccount();
-    AccountDetallesPage details= new AccountDetallesPage();
-
-
-
 
     @Test
-    public void TCO1() throws IOException {
+    public void testName() throws IOException {
+
+
+
+    HomePage homePage = new HomePage();
+        SignIn signIn= new SignIn();
+        MyAccount myAccount= new MyAccount();
+        AccountDetallesPage details= new AccountDetallesPage();
 
 
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
 
-
+        ReusableMethods.waitFor(5);
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
         signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
@@ -69,6 +71,8 @@ public class TC_02 {
 
         ReusableMethods.scrollIntoViewJS(details.mensajesdechanges);
         ReusableMethods.getScreenshot("EkranGoruntusu");
+        Driver.closeDriver();
+
     }
 
 
