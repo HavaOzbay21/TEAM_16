@@ -18,17 +18,22 @@ import team_16.utilities.ReusableMethods;
 import java.util.List;
 
 public class TC_03 {
-    HomePage homePage = new HomePage();
-    SignIn signIn = new SignIn();
-    MyAccount myAccount = new MyAccount();
-    AccountDetallesPage details = new AccountDetallesPage();
-    ComparePage compare = new ComparePage();
+
+
     static List<WebElement> urunler;
+
 
     @Test
     public void TC01() {
-        Driver.getDriver().get(ConfigReader.getProperty("site_url"));
 
+        HomePage homePage = new HomePage();
+        SignIn signIn = new SignIn();
+        MyAccount myAccount = new MyAccount();
+        AccountDetallesPage details = new AccountDetallesPage();
+        ComparePage compare = new ComparePage();
+
+        Driver.getDriver().get(ConfigReader.getProperty("site_url"));
+        ReusableMethods.waitFor(5);
 
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
@@ -61,6 +66,7 @@ public class TC_03 {
 //        List<WebElement> urunlerincomparesayfasindagorunmesi = Driver.getDriver().findElements(By.xpath("//a[@class='compare btn-product-icon']"));
 //        Assert.assertEquals(compare.compareButonu.getSize()==4);
 //        ReusableMethods.waitFor(5);
+        Driver.closeDriver();
 
     }
 

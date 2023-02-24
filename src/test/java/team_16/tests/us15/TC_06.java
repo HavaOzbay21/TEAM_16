@@ -1,4 +1,4 @@
-package team_16.tests.us16;
+package team_16.tests.us15;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
@@ -8,14 +8,16 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
-public class TC_01 {
+import java.io.IOException;
+
+public class TC_06 {
 
 
 
 
 
     @Test
-    public void testTC_01() {
+    public void testTC_01() throws IOException {
         HomePage homePage = new HomePage();
         SignIn signIn = new SignIn();
         MyAccount myAccount = new MyAccount();
@@ -33,15 +35,19 @@ public class TC_01 {
         signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava") + Keys.ENTER);
         ReusableMethods.waitFor(2);
         homePage.myAccountSecenegi.click();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.verifyElementDisplayed(myAccount.myAccountSayfasi);
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.verifyElementDisplayed(storeManagerPage.StoreManagerSayfaGorunumu);
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.ProductSecenegi);
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.AddNewSecenegi);
         ReusableMethods.scrollDownActions();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.AddProductYazisi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.SimpleProductSecili.isDisplayed();
         ReusableMethods.clickByJS(storeManagerPage.VirtualKutucugu);
         ReusableMethods.waitFor(2);
@@ -85,14 +91,15 @@ public class TC_01 {
         ReusableMethods.waitFor(5);
 
         ReusableMethods.clickByJS(storeManagerPage.ProductBrandsEspanya);
-        storeManagerPage.InventorySecenegi.click();
-        inventoryPage.SKUkutucugu.sendKeys("codigoo");
-        inventoryPage.ManagerStockKutusu.click();
+        ReusableMethods.clickByJS(storeManagerPage.InventorySecenegi);
+        inventoryPage.SKUkutucugu.sendKeys("20710204");
+        ReusableMethods.clickByJS(inventoryPage.ManagerStockKutusu);
         inventoryPage.StockQtyKutusu.clear();
         inventoryPage.StockQtyKutusu.sendKeys("50");
         Select select = new Select(inventoryPage.AllowBackordersDropdown);
         select.selectByVisibleText("Allow");
         ReusableMethods.clickByJS(storeManagerPage.AttributesSecenegi);
+        ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(attributesPage.ColorSecenegi);
         ReusableMethods.clickByJS(attributesPage.SelectAllSecenegi);
         ReusableMethods.waitFor(2);
@@ -100,7 +107,7 @@ public class TC_01 {
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSecenegi);
         ReusableMethods.waitFor(5);
-        Driver.getDriver().switchTo().alert().sendKeys("colorinss");
+        Driver.getDriver().switchTo().alert().sendKeys("rosachillon");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(5);
@@ -111,7 +118,7 @@ public class TC_01 {
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSizeSecenegi);
         ReusableMethods.waitFor(5);
-        Driver.getDriver().switchTo().alert().sendKeys("laargoo");
+        Driver.getDriver().switchTo().alert().sendKeys("muyyylargo");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(2);
@@ -133,6 +140,7 @@ public class TC_01 {
         advancedPage.PurchaseNoteKutucugu.sendKeys("GRACIAS POR SU COMPRA");
         ReusableMethods.clickByJS(storeManagerPage.SUBMITButonu);
         ReusableMethods.waitFor(2);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.EditProductGorunuyormu.isDisplayed();
 
     }

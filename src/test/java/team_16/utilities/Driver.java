@@ -38,10 +38,10 @@ public class Driver {
 //            NOTE: sel 4.5
 //            driver = WebDriverManager.chromedriver().create();
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(25));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         try {
-            driver.manage().window().maximize();
+           // driver.manage().window().maximize();
         } catch (Exception e) {
 //            System.out.println("Windows Maximize yapilamadi");
 //            Reporter.log("Exception Yakalandi");

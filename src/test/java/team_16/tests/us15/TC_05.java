@@ -8,6 +8,8 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
+import java.io.IOException;
+
 public class TC_05 {
 
 
@@ -19,7 +21,7 @@ public class TC_05 {
     //Vendor "Menu Order" kutusuna INTEGER bir deger girer
     //Vendor "Purchase Note" kutusuna bir not girer
     @Test
-    public void testTC_05() {
+    public void testTC_05() throws IOException {
         HomePage homePage = new HomePage();
         SignIn signIn = new SignIn();
         MyAccount myAccount = new MyAccount();
@@ -37,8 +39,10 @@ public class TC_05 {
         signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava") + Keys.ENTER);
         ReusableMethods.waitFor(2);
         homePage.myAccountSecenegi.click();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert myAccount.myAccountSayfasi.isDisplayed();
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.StoreManagerSayfaGorunumu.isDisplayed();
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.ProductSecenegi);
@@ -50,7 +54,9 @@ public class TC_05 {
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(storeManagerPage.LinkedSecenegi);
         ReusableMethods.waitFor(2);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert linkedPage.Up_sellsKutucugu.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert linkedPage.Cross_sellsKutucugu.isDisplayed();
         ReusableMethods.clickByJS(storeManagerPage.SEOSecenegi);
         ReusableMethods.scrollDownActions();
@@ -60,7 +66,9 @@ public class TC_05 {
         ReusableMethods.scrollDownActions();
         Select select = new Select(toptanUrunGostermeAyarlarıPage.PieceTypeDropdown);
         select.selectByVisibleText("Piece");
+        toptanUrunGostermeAyarlarıPage.UnitsPerPieceKutucugu.clear();
         toptanUrunGostermeAyarlarıPage.UnitsPerPieceKutucugu.sendKeys("50");
+        toptanUrunGostermeAyarlarıPage.MinOrderQuantityKutucugu.clear();
         toptanUrunGostermeAyarlarıPage.MinOrderQuantityKutucugu.sendKeys("50");
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(storeManagerPage.AdvancedSecenegi);
