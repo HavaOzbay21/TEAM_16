@@ -66,7 +66,9 @@ public class TC_05 {
         ReusableMethods.scrollDownActions();
         Select select = new Select(toptanUrunGostermeAyarlarıPage.PieceTypeDropdown);
         select.selectByVisibleText("Piece");
+        toptanUrunGostermeAyarlarıPage.UnitsPerPieceKutucugu.clear();
         toptanUrunGostermeAyarlarıPage.UnitsPerPieceKutucugu.sendKeys("50");
+        toptanUrunGostermeAyarlarıPage.MinOrderQuantityKutucugu.clear();
         toptanUrunGostermeAyarlarıPage.MinOrderQuantityKutucugu.sendKeys("50");
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(storeManagerPage.AdvancedSecenegi);
@@ -75,7 +77,7 @@ public class TC_05 {
         advancedPage.MenuOrderKutucugu.sendKeys("50");
         ReusableMethods.waitFor(2);
         advancedPage.PurchaseNoteKutucugu.sendKeys("merhaba");
-        Driver.closeDriver();
+        //Driver.closeDriver();
 
 
     }
