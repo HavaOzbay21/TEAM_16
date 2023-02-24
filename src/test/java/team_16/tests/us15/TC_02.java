@@ -9,12 +9,13 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
+import java.io.IOException;
 
 
 public class TC_02 {
 
     @Test
-    public void testTC_02() {
+    public void testTC_02() throws IOException {
         HomePage homePage = new HomePage();
         SignIn signIn = new SignIn();
         MyAccount myAccount = new MyAccount();
@@ -27,8 +28,10 @@ public class TC_02 {
         signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava")+ Keys.ENTER);
         ReusableMethods.waitFor(2);
         homePage.myAccountSecenegi.click();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.verifyElementDisplayed(myAccount.myAccountSayfasi);
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.verifyElementDisplayed(storeManagerPage.StoreManagerSayfaGorunumu);
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.ProductSecenegi);
@@ -45,6 +48,7 @@ public class TC_02 {
         inventoryPage.StockQtyKutusu.sendKeys(ConfigReader.getProperty("StockQty"));
         ReusableMethods.scrollDownActions();
         ReusableMethods.waitFor(2);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.verifyElementDisplayed(inventoryPage.AllowBackordersDropdown);
         ReusableMethods.scrollDownActions();
         ReusableMethods.waitFor(2);

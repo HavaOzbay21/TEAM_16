@@ -50,6 +50,8 @@ public class ShippingPage {
 
 
 
+
+
  //HAVA
     @FindBy(xpath = "//input[@id='weight']") public WebElement WeightKGKutusu;
     @FindBy(xpath = "//input[@id='length']") public WebElement LenghtCMKutusu;

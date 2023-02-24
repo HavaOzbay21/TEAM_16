@@ -68,8 +68,10 @@ public class StoreManagerPage {
     @FindBy(xpath = "(//body[@id='tinymce'])[2]")public WebElement Description;
     @FindBy(xpath = "//img[@id='featured_img_display']")public WebElement BuyukFoto;
     @FindBy(xpath = "//img[@id='gallery_img_gimage_0_display']")public WebElement KucukFoto;
-    @FindBy(xpath = "//span[text()='Accessories']")public WebElement CategoryAccessories;
+    @FindBy(xpath = "//input[@data-super_parent='598']")public WebElement CategoryLAMPARAS;
     @FindBy(xpath = "//input[@data-super_parent='462']")public WebElement ProductBrandsEspanya;
+    @FindBy(xpath = "//input[@name='submit-data']") public WebElement SUBMITButonu;
+    @FindBy(xpath = "//h2[text()='Edit Product']") public WebElement EditProductGorunuyormu;
 
 
 

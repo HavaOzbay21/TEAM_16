@@ -19,20 +19,22 @@ import java.io.IOException;
 public class TC_01 {
 
 
-    HomePage homePage = new HomePage();
-    SignIn signIn= new SignIn();
-    MyAccount myAccount= new MyAccount();
-AccountDetallesPage details= new AccountDetallesPage();
+    @Test
+    public void testName() {
 
-@Test
-    public void TC01() throws InterruptedException, IOException {
 
+        HomePage homePage = new HomePage();
+        SignIn signIn = new SignIn();
+
+
+        AccountDetallesPage details = new AccountDetallesPage();
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
 
-
+        ReusableMethods.waitFor(5);
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
         signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
+    ReusableMethods.waitFor(2);
         signIn.signInButton.click();
 
 
@@ -51,5 +53,8 @@ AccountDetallesPage details= new AccountDetallesPage();
         ReusableMethods.waitFor(3);
 
         Assert.assertTrue(details.detailsSayfasi.isDisplayed());
+
+        Driver.closeDriver();
+
     }
 }
