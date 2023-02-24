@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/hamit/IdeaProjects/TEAM_16/src/test/java/team_16/tests/us09/US09.java">
+        <classes>
+            <class name="team_16.tests.us09.US09">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
