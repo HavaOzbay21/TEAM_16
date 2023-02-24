@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3ee74aa8-e6b1-4291-a335-7d8668b221ab" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_03__3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_03__3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_04.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us16/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_03__3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_03__3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_04.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us16/TC_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_06.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_06.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +32,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TC_06.testTC_01">
+  <component name="RunManager" selected="TestNG.C:/Users/havao/IdeaProjects/TEAM_16/testng.xml">
     <configuration name="C:/Users/havao/IdeaProjects/TEAM_16/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TEAM_16" />
       <shortenClasspath name="NONE" />
@@ -142,9 +138,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/havao/IdeaProjects/TEAM_16/testng.xml" />
         <item itemvalue="TestNG.TC_06.testTC_01" />
         <item itemvalue="TestNG.TC_03__3.testTC_03_3" />
-        <item itemvalue="TestNG.C:/Users/havao/IdeaProjects/TEAM_16/testng.xml" />
         <item itemvalue="TestNG.TC_01.TC01" />
         <item itemvalue="TestNG.TC_02.TCO1" />
       </list>
