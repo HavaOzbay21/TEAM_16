@@ -77,7 +77,7 @@ public class TC_05 {
         advancedPage.MenuOrderKutucugu.sendKeys("50");
         ReusableMethods.waitFor(2);
         advancedPage.PurchaseNoteKutucugu.sendKeys("merhaba");
-        //Driver.closeDriver();
+        Driver.closeDriver();
 
 
     }
