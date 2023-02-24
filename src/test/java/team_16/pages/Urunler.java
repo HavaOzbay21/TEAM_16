@@ -14,6 +14,8 @@ public class Urunler {
     @FindBy(xpath = "(//*[@src=\"https://spendinggood.com/wp-content/uploads/2023/02/Screenshot_15-300x300.png\"])[1]")
     public WebElement urun900;
 
+    @FindBy(xpath = "(//*[.='Apple'])[2]") public WebElement appleUrunu;
+
     @FindBy(xpath = "//*[@name=\"add-to-cart\"]")
     public WebElement addToCard;
 
@@ -247,7 +249,8 @@ public class Urunler {
 
 
 
-
+    @FindBy(xpath="(//*[text()='Apple'])[2]")
+    public WebElement apple1;
 
 
 

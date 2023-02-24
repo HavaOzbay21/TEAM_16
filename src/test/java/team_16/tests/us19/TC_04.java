@@ -65,6 +65,7 @@ public class TC_04 {
         options.selectByValue("GB");
         // new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).build().perform();
 
+        billingDetails.streetAddress.clear();
         billingDetails.streetAddress.sendKeys(ConfigReader.getProperty("street"),Keys.TAB,ConfigReader.getProperty("unit"),
                 Keys.TAB,ConfigReader.getProperty("postcode"),Keys.TAB,ConfigReader.getProperty("city"),
                 Keys.TAB,Keys.TAB,ConfigReader.getProperty("phone"),Keys.TAB,ConfigReader.getProperty("email"));
