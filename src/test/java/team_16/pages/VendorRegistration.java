@@ -1,8 +1,10 @@
 package team_16.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import team_16.utilities.Driver;
 
 public class VendorRegistration {
@@ -296,6 +298,21 @@ public class VendorRegistration {
 
     @FindBy(xpath= "//div[@class='wcfm-message wcfm-success']")
     public WebElement Completed_Yazısı;
+
+    @FindBy(xpath = "//h2[.='Vendor Registration']")
+    public WebElement vendorRegistrationYazısı;
+    @FindBy(xpath = "//input[@name='user_email']")
+    public WebElement registrationEmailKutusu;
+    @FindBy(xpath ="//div[@class='wcfm-message wcfm-error']")
+    public WebElement existsyazısı;
+
+    @FindBy(xpath = "//input[@name='user_email']")
+    public WebElement useremailus9;
+
+     @FindBy(xpath = "//input[@name='wcfm_email_verified_input']")
+    public WebElement codeus9;
+
+
 
 
 

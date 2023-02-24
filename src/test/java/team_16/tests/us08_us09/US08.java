@@ -1,8 +1,6 @@
-package team_16.tests.us08;
+package team_16.tests.us08_us09;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,8 +17,7 @@ public class US08 {
     BillingDetails billingDetails = new BillingDetails();
     MyAccount myAccount = new MyAccount();
 
-
-    @Test (priority = 1)
+    @Test(priority = 1)
     public void test01() throws InterruptedException {
 
         //*****US08*****
@@ -34,8 +31,7 @@ public class US08 {
         //5-)Kullanici SIGN IN butonunu tiklar
         signIn.Username_or_email_address.sendKeys("hamit", Keys.TAB, "techpro", Keys.ENTER);
         //6-)Sayfaya giris yaptigini gorur
-        WebElement signOut = Driver.getDriver().findElement(By.xpath("//*[.='Sign Out']"));// Sing Out butonu locate
-        Assert.assertTrue(signOut.isDisplayed());
+        assert homePage.signOut.isDisplayed();
         //7-)Search alanindan istegidi urunu aratir
         homePage.searchButonu.sendKeys("apple", Keys.ENTER);
         //8-)aradigi urunu gorur
@@ -46,8 +42,8 @@ public class US08 {
         ReusableMethods.clickByJS(urunler.add_to_wishlist);
     }
 
-    @Test (priority = 2)
-    public void test02()  throws InterruptedException {
+    @Test(priority = 2)
+    public void test02() throws InterruptedException {
         //*****US08*****
         //*****TC02*****
         //   1- Kullanıcı ekranın sağ üst köşesinde yer alan Wishlist butonunu görür ve tıklar
@@ -58,7 +54,7 @@ public class US08 {
         Assert.assertTrue(urunler.wishlistsayfası.isDisplayed());
     }
 
-    @Test (priority = 3)
+    @Test(priority = 3)
     public void test03() throws InterruptedException {
         //*****US08*****
         //*****TC03*****
@@ -68,55 +64,53 @@ public class US08 {
         Assert.assertTrue(urunler.quickview.isDisplayed());
         urunler.quickview.click();
         //3-Kullanıcı QUICK VIEW butonuna tıklar ve ürüne ait özellikleri görüntüler
-        Thread.sleep(3000);
-        Driver.getDriver().findElement(By.xpath("//button[@class='mfp-close']")).click();
+        ReusableMethods.waitFor(3);
+        ReusableMethods.clickByJS(homePage.test3);
     }
 
-
-    @Test (priority = 4)
+    @Test(priority = 4)
     public void test04() throws InterruptedException {
         //*****US08*****
         //*****TC04*****
         // 1- Kullanıcı Wishlist sayfasında eklediği ürünlerin listesini görür
         Assert.assertTrue(urunler.wishlistsayfası.isDisplayed());
-
         // 2-Wishlistteki ürünlerin her birine ait "Add to Cart" butonunu görür ve tıklar
-        Driver.getDriver().findElement(By.xpath("//a[@class='btn btn-dark btn-rounded btn-sm add_to_cart alt']")).click();
-
+        //Driver.getDriver().findElement(By.xpath("//a[@class='btn btn-dark btn-rounded btn-sm add_to_cart alt']")).click();
+        ReusableMethods.clickByJS(homePage.addToCart);
         // 3-Kullanıcı sırasıyla sayfanın sağ üst köşesinde yer alan "Cart" butonuna ve ardından
         // görüntülenen "View Cart" butonuna tıklar.
         homePage.cart.click();
-        Thread.sleep(3000);
+        ReusableMethods.waitFor(3);
         shoppingCard.viewcart.click();
         // 4- Kullanıcı Cart butonuna tıklayarak alışveriş sepetini görüntüler.
         // 5- Kullanıcı alışveriş sepetinde daha önce alışveriş sepetine eklemiş olduğu ürünlerin listesini görür.
         // 6-Kullanıcı alışveriş sepeti sayfasında "Proceed to Check Out" butonuna tıklar.
-        Thread.sleep(3000);
+        ReusableMethods.waitFor(3);
         ReusableMethods.clickByJS(shoppingCard.proceed_to_checkout);
         // 7-Kullanıcı Billing Details sayfasını görüntüler ve istenen bilgileri eksiksiz şekilde girer.
         ReusableMethods.clickByJS(billingDetails.firstName);
         billingDetails.firstName.clear();
         billingDetails.firstName.sendKeys("hamit", Keys.TAB,
-              ("sevsay"), Keys.TAB, "anka aş",Keys.TAB);
+                ("sever"), Keys.TAB, "anka aş", Keys.TAB);
         Select options = new Select(billingDetails.countryRegion);
         options.selectByValue("GB");
+        billingDetails.streetAddress.clear();
         billingDetails.streetAddress.sendKeys(ConfigReader.getProperty("street"), Keys.TAB, ConfigReader.getProperty("unit"),
-                Keys.TAB, "van", Keys.TAB, ("city"),
+                Keys.TAB, "london", Keys.TAB, ("city"),
                 Keys.TAB, "CT1 2FY", Keys.TAB, ConfigReader.getProperty("phone"), Keys.TAB, ConfigReader.getProperty("email"));
 
         // 8-Kullanıcı sayfanın sağ tarafında yer alan sipariş bilgilerini görür ve "Place Order" butonuna tıklar.
         // 9-Kullanıcı Order Complete sayfasını ve sayfada yer alan
-        Thread.sleep(3000);
-        Driver.getDriver().findElement(By.xpath("//button[@class='button alt']")).click();
+        ReusableMethods.waitFor(3);
+        ReusableMethods.clickByJS(homePage.buttonalt);
+        //Driver.getDriver().findElement(By.xpath("//button[@class='button alt']")).click();
         // "Thank you. Your order has been received" yazısını görüntüler.
-        Thread.sleep(10000);
+        ReusableMethods.waitFor(10);
         // 10- Kullanıcı Order Complete sayfasında siparişine ilişkin sipariş numarasını görüntüler.
-        Thread.sleep(3000);
-        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//i[@class='fas fa-check']")).isDisplayed());
-        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//span[.='Order number']")).isDisplayed());
-
-
-
+        ReusableMethods.waitFor(3);
+        assert homePage.us8ass1.isDisplayed();
+        assert homePage.us8ass2.isDisplayed();
+        Driver.closeDriver();
 
     }
 }

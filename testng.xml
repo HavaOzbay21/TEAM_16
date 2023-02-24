@@ -2,12 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="C:/Users/hamit/IdeaProjects/TEAM_16/src/test/java/team_16/tests/us09/US09.java">
+          name="C:/Users/hamit/IdeaProjects/TEAM_16/src/test/java/team_16/tests/us08/US08.java">
         <classes>
-            <class name="team_16.tests.us09.US09">
+            <class name="team_16.tests.us08_us09.US08">
                 <methods>
                     <include name="test01"/>
                     <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
                 </methods>
             </class>
         </classes>
