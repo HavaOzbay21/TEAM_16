@@ -11,24 +11,25 @@ import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
 public class US09 {
-    VendorRegistration vendorRegistration = new VendorRegistration();
-
-    SignIn signIn = new SignIn();
-    SignUp signUp = new SignUp();
-    HomePage homePage = new HomePage();
-    Urunler urunler = new Urunler();
-    ShoppingCard shoppingCard = new ShoppingCard();
-    BillingDetails billingDetails = new BillingDetails();
-    MyAccount myAccount = new MyAccount();
-    Actions actions = new Actions(Driver.getDriver());
 
     @Test(priority = 1)
     public void test01() {
+        VendorRegistration vendorRegistration = new VendorRegistration();
+
+        SignIn signIn = new SignIn();
+        SignUp signUp = new SignUp();
+        HomePage homePage = new HomePage();
+        Urunler urunler = new Urunler();
+        ShoppingCard shoppingCard = new ShoppingCard();
+        BillingDetails billingDetails = new BillingDetails();
+        MyAccount myAccount = new MyAccount();
+        Actions actions = new Actions(Driver.getDriver());
         //*****US09*****
         //*****TC01*****
         //1-)Kullanici https://spendinggood.com/ url'sine gider
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
         //2-)Anasayfada sag ust kosedeki Sign In linkine tiklar
+        ReusableMethods.waitFor(3);
         homePage.signIn.click();
         //3-)Kullanici Sign-in sayfasina yonlendirilir
         //4-)Kullanici Sign in sayfasında yer alan Sign Up butonunu görüntüler ve tıklar
@@ -41,6 +42,16 @@ public class US09 {
 
     @Test(priority = 2)
     public void test02() throws InterruptedException {
+        VendorRegistration vendorRegistration = new VendorRegistration();
+
+        SignIn signIn = new SignIn();
+        SignUp signUp = new SignUp();
+        HomePage homePage = new HomePage();
+        Urunler urunler = new Urunler();
+        ShoppingCard shoppingCard = new ShoppingCard();
+        BillingDetails billingDetails = new BillingDetails();
+        MyAccount myAccount = new MyAccount();
+        Actions actions = new Actions(Driver.getDriver());
         //*****US09*****
         //*****TC02*****
         //1-)Vendor Registration sayfasına ulaşır
