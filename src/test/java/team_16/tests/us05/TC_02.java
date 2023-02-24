@@ -5,6 +5,7 @@ package team_16.tests.us05;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 import team_16.pages.HomePage;
 import team_16.pages.MyAccount;
 import team_16.pages.SignIn;
@@ -19,10 +20,9 @@ import java.io.IOException;
 public class TC_02 {
 
 
-
-
-
-
+    @Test
+    public void testName() {
+    }
 
     public void TCO1() throws IOException {
         HomePage homePage = new HomePage();
