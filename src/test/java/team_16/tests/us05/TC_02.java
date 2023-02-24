@@ -21,11 +21,11 @@ public class TC_02 {
 
 
     @Test
-    public void testName() {
-    }
+    public void testName() throws IOException {
 
-    public void TCO1() throws IOException {
-        HomePage homePage = new HomePage();
+
+
+    HomePage homePage = new HomePage();
         SignIn signIn= new SignIn();
         MyAccount myAccount= new MyAccount();
         AccountDetallesPage details= new AccountDetallesPage();
