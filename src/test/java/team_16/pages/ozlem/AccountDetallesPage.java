@@ -9,8 +9,9 @@ public class AccountDetallesPage {
 
 
     public AccountDetallesPage() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
+
 
     @FindBy(xpath = "(//*[@class='w-icon-account'])[1]")
     public WebElement sigInButton;
@@ -51,10 +52,10 @@ public class AccountDetallesPage {
     public WebElement mensajesdechanges;
 
     //div[@class='woocommerce-notices-wrapper']onceki mensajeslocati
-
+//*[@class='login logout inline-type']
+    @FindBy(xpath = "//*[@class='login logout inline-type']")
+    public WebElement logoutozlem;
 }
-
-
 
 
 

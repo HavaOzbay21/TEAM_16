@@ -96,6 +96,7 @@ public class TC_01 {
         WebElement ekleneneleman = compare.uruneklemecompareurunu;
         ReusableMethods.verifyElementDisplayed(ekleneneleman);
         ReusableMethods.waitFor(10);
+        Driver.closeDriver();
 
 
 //

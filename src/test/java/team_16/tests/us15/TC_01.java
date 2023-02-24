@@ -19,23 +19,6 @@ import java.security.Key;
 import java.util.jar.JarEntry;
 
 public class TC_01 {
-
-
-
-
-
-
-
-    //Vendor acilan  sayfada en altina iner
-    //Vendor "Inventory" secenegini gorur
-    //Vendor "Shipping" secenegini gorur
-    //Vendor "Attributes" secenegini gorur
-    //Vendor "Linked" secenegini gorur
-    //Vendor "SEO" secenegini gorur
-    //Vendor "Toptan Urun Gosterme Ayarlari" secenegini gorur
-    //Vendor "Advanced" secenegini gorur
-
-
     @Test
     public void testTC_01() throws IOException {
         HomePage homePage = new HomePage();
@@ -52,6 +35,7 @@ public class TC_01 {
         ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert myAccount.myAccountSayfasi.isDisplayed();
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.StoreManagerSayfaGorunumu.isDisplayed();
         ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.scrollDownActions();
@@ -63,13 +47,19 @@ public class TC_01 {
         ReusableMethods.scrollDownActions();
         ReusableMethods.waitFor(2);
         ReusableMethods.verifyElementDisplayed(storeManagerPage.InventorySecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.ShippingSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.AttributesSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.LinkedSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.SEOSecenegi.isDisplayed();
         ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.ToptanUrunGostermeAyarlarıSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.AdvancedSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         Driver.closeDriver();
 
     }

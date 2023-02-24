@@ -18,18 +18,21 @@ import team_16.utilities.ReusableMethods;
 import java.util.List;
 
 public class TC_04 {
-    HomePage homePage = new HomePage();
-    SignIn signIn = new SignIn();
-    MyAccount myAccount = new MyAccount();
-    AccountDetallesPage details = new AccountDetallesPage();
-    ComparePage compare = new ComparePage();
+
+
     static List<WebElement> urunler;
 
     @Test
     public void TC01() {
+        HomePage homePage = new HomePage();
+        SignIn signIn = new SignIn();
+        MyAccount myAccount = new MyAccount();
+        AccountDetallesPage details = new AccountDetallesPage();
+        ComparePage compare = new ComparePage();
+
+
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
-
-
+        ReusableMethods.waitFor(5);
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
         signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
@@ -63,6 +66,7 @@ public class TC_04 {
 
         Assert.assertTrue(compare.elemanyok.getText().contains("No products added"));
         System.out.println(compare.elemanyok.getText());
+        Driver.closeDriver();
 
 
     }

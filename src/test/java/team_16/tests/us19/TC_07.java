@@ -82,8 +82,10 @@ public class TC_07 {
 
 
         ReusableMethods.clickByJS(billingDetails.payDoor);
+        ReusableMethods.waitFor(2);
 
         ReusableMethods.clickByJS(billingDetails.placeOrder);
+        ReusableMethods.waitFor(2);
 
         Assert.assertTrue(ordersPage.orderComplete.isDisplayed());
 
