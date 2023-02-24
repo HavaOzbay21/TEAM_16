@@ -42,13 +42,13 @@ public class TC_03__3 {
         ReusableMethods.clickByJS(storeManagerPage.ShippingSecenegi);
         shippingPage.WeightKGKutusu.sendKeys("50");
         shippingPage.LenghtCMKutusu.sendKeys("50");
-        shippingPage.WeightKGKutusu.sendKeys("50");
+        shippingPage.WidthCMKutusu.sendKeys("50");
         shippingPage.HeightCMKutusu.sendKeys("50");
         ReusableMethods.scrollDownActions();
         assert shippingPage.ShippingClassDriopdown.isDisplayed();
         Select select = new Select(shippingPage.ProcessingTimeDropdown);
         select.selectByVisibleText("2-3 weeks");
         ReusableMethods.waitFor(2);
-        Driver.closeDriver();//    jjjfjfjfj
+        Driver.closeDriver();
     }
 }

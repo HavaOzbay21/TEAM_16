@@ -1,4 +1,4 @@
-package team_16.tests.us16;
+package team_16.tests.us15;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
@@ -10,7 +10,7 @@ import team_16.utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class TC_01 {
+public class TC_06 {
 
 
 
@@ -91,14 +91,15 @@ public class TC_01 {
         ReusableMethods.waitFor(5);
 
         ReusableMethods.clickByJS(storeManagerPage.ProductBrandsEspanya);
-        storeManagerPage.InventorySecenegi.click();
-        inventoryPage.SKUkutucugu.sendKeys("codigoo");
-        inventoryPage.ManagerStockKutusu.click();
+        ReusableMethods.clickByJS(storeManagerPage.InventorySecenegi);
+        inventoryPage.SKUkutucugu.sendKeys("20710204");
+        ReusableMethods.clickByJS(inventoryPage.ManagerStockKutusu);
         inventoryPage.StockQtyKutusu.clear();
         inventoryPage.StockQtyKutusu.sendKeys("50");
         Select select = new Select(inventoryPage.AllowBackordersDropdown);
         select.selectByVisibleText("Allow");
         ReusableMethods.clickByJS(storeManagerPage.AttributesSecenegi);
+        ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(attributesPage.ColorSecenegi);
         ReusableMethods.clickByJS(attributesPage.SelectAllSecenegi);
         ReusableMethods.waitFor(2);
@@ -106,7 +107,7 @@ public class TC_01 {
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSecenegi);
         ReusableMethods.waitFor(5);
-        Driver.getDriver().switchTo().alert().sendKeys("colorinss");
+        Driver.getDriver().switchTo().alert().sendKeys("rosachillon");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(5);
@@ -117,7 +118,7 @@ public class TC_01 {
         ReusableMethods.waitFor(2);
         ReusableMethods.clickByJS(attributesPage.AddNewSizeSecenegi);
         ReusableMethods.waitFor(5);
-        Driver.getDriver().switchTo().alert().sendKeys("laargoo");
+        Driver.getDriver().switchTo().alert().sendKeys("muyyylargo");
         ReusableMethods.waitFor(2);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(2);
