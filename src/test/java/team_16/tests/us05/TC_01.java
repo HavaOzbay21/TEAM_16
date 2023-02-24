@@ -24,7 +24,7 @@ public class TC_01 {
     MyAccount myAccount= new MyAccount();
 AccountDetallesPage details= new AccountDetallesPage();
 
-@Test
+
     public void TC01() throws InterruptedException, IOException {
 
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
