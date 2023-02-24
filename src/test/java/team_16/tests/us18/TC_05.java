@@ -58,59 +58,11 @@ public class TC_05 {
         ReusableMethods.clickByJS(imagePage.selectFiles);
 //        WebElement selectFiles = Driver.getDriver().findElement(By.xpath("(//button[@class='browser button button-hero'])[3]"));
 //        selectFiles.click();
-        ReusableMethods.waitFor(3);
-        uploadFilePath("C:\\Users\\Hacer\\Desktop\\iskarpin.jpg");
-                ReusableMethods.waitFor(5);
-
-                ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
-
-    }
-
-
-        public static void uploadFilePath(String filePath) {
-            try {
-                ReusableMethods.waitFor(3);
-//            Dosyayi bulmak icin kullanilir
-                StringSelection stringSelection = new StringSelection(filePath);
-                Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
-//            ROBOT CLASS MASAUSTU UYGULAMARI ILE ILETISIME GECMEK ICIN KULLANILIT
-                Robot robot = new Robot();
-//          CONTROL TUSUNA BAS
-                robot.keyPress(KeyEvent.VK_CONTROL);
-                ReusableMethods.waitFor(3);
-//            V TUSUNA BAS
-                robot.keyPress(KeyEvent.VK_V);
-                ReusableMethods.waitFor(3);
-                //releasing ctrl+v
-                robot.keyRelease(KeyEvent.VK_CONTROL);
-                ReusableMethods.waitFor(3);
-                robot.keyRelease(KeyEvent.VK_V);
-                ReusableMethods.waitFor(3);
-                System.out.println("YAPISTIRMA ISLEMI : PASSED");
-                //pressing enter
-                ReusableMethods.waitFor(3);
-                robot.keyPress(KeyEvent.VK_ENTER);
-                ReusableMethods.waitFor(3);
-                //releasing enter
-                robot.keyRelease(KeyEvent.VK_ENTER);
-                ReusableMethods.waitFor(3);
-                System.out.println("DOSYA YUKLENDI.");
-            } catch (Exception e) {
-
-            }
-        }
-
-}
-
-
-
-
-
-
-
-
-
-
+//        ReusableMethods.waitFor(3);
+//        ReusableMethods.uploadFilePath("C:\\Users\\Hacer\\Desktop\\iskarpin.jpg");
+//                ReusableMethods.waitFor(5);
+//
+//                ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
 
 
 
@@ -126,6 +78,27 @@ public class TC_05 {
 //        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.product);
 //        Assert.assertTrue(SpendinggoodAddProductPage.kolyeOnProduct.isDisplayed());
 //        Driver.closeDriver();
+
+
+
+    }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

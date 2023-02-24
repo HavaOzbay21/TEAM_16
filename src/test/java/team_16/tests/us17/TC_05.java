@@ -34,20 +34,20 @@ public class TC_05 {
         simpleDropdown.selectByVisibleText("Variable Product");
         ReusableMethods.waitFor(3);
 
-        ReusableMethods.clickByJS( SpendinggoodAddProductPage.kucukFoto);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage.MediaLibrary);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS( SpendinggoodAddProductPage.blueTshirt);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage.addToGallery);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage .buyukFoto);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage.greenTshirt);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
-        ReusableMethods.waitFor(3);
+//        ReusableMethods.clickByJS( SpendinggoodAddProductPage.kucukFoto);
+//        ReusableMethods.waitFor(3);
+//        ReusableMethods.clickByJS(SpendinggoodAddProductPage.MediaLibrary);
+//        ReusableMethods.waitFor(3);
+//        ReusableMethods.clickByJS( SpendinggoodAddProductPage.blueTshirt);
+//        ReusableMethods.waitFor(3);
+//        ReusableMethods.clickByJS(SpendinggoodAddProductPage.addToGallery);
+//        ReusableMethods.waitFor(3);
+//        ReusableMethods.clickByJS(SpendinggoodAddProductPage .buyukFoto);
+//        ReusableMethods.waitFor(3);
+//        ReusableMethods.clickByJS(SpendinggoodAddProductPage.greenTshirt);
+//        ReusableMethods.waitFor(3);
+//        ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
+//        ReusableMethods.waitFor(3);
 
 
 //        actions.sendKeys(Keys.PAGE_DOWN).perform();
@@ -66,26 +66,26 @@ public class TC_05 {
         ReusableMethods.clickByJS( SpendinggoodAddProductPage.color);
         ReusableMethods.waitFor(2);
 
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.colorButton);
 
-        ReusableMethods.clickByJS( SpendinggoodAddProductPage.colorButton);
-        Select colorButton = new Select(SpendinggoodAddProductPage.colorButton);
-        ReusableMethods.waitFor(3);
-        colorButton.selectByVisibleText("Red");
+        SpendinggoodAddProductPage.colorButton.sendKeys("red", Keys.ENTER);
 
-        actions.moveToElement(SpendinggoodAddProductPage.size).perform();
-        SpendinggoodAddProductPage.size.click();
-        Select sizeButton = new Select(SpendinggoodAddProductPage.colorButton);
-        ReusableMethods.waitFor(3);
-        sizeButton.selectByVisibleText("Large");
 
-        actions.moveToElement(SpendinggoodAddProductPage.colorAddNewButton).perform();
-        SpendinggoodAddProductPage.colorAddNewButton.click();
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.size);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.sizeButton);
+        SpendinggoodAddProductPage.sizeButton.sendKeys("Large", Keys.ENTER);
+
+
+//        actions.moveToElement(SpendinggoodAddProductPage.colorAddNewButton).perform();
+//        SpendinggoodAddProductPage.colorAddNewButton.click();
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.colorAddNewButton);
         Driver.getDriver().switchTo().alert().sendKeys("lilak");
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(3);
 
-        actions.moveToElement(SpendinggoodAddProductPage.sizeAddNewButton).perform();
-        SpendinggoodAddProductPage.sizeAddNewButton.click();
+//        actions.moveToElement(SpendinggoodAddProductPage.sizeAddNewButton).perform();
+//        SpendinggoodAddProductPage.sizeAddNewButton.click();
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.sizeAddNewButton);
         Driver.getDriver().switchTo().alert().sendKeys("mini");
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(3);
@@ -125,19 +125,7 @@ public class TC_05 {
 
         Assert.assertTrue(SpendinggoodAddProductPage.succesMessage2.isDisplayed());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        Driver.closeDriver();
 
 
     }

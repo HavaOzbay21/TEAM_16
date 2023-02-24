@@ -31,19 +31,27 @@ public class TC_04 {
         ReusableMethods.waitFor(3);
 
 
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        SpendinggoodAddProductPage.attributes.click();
-        actions.moveToElement(SpendinggoodAddProductPage.color).perform();
-        SpendinggoodAddProductPage.color.click();
+//        actions.sendKeys(Keys.PAGE_DOWN).perform();
+//        actions.sendKeys(Keys.PAGE_DOWN).perform();
+//        actions.sendKeys(Keys.PAGE_DOWN).perform();
+//        SpendinggoodAddProductPage.attributes.click();
 
-        actions.moveToElement(SpendinggoodAddProductPage.colorButton).perform();
-        SpendinggoodAddProductPage.colorButton.click();
-        SpendinggoodAddProductPage.price.sendKeys("red", Keys.ENTER);
-        actions.moveToElement(SpendinggoodAddProductPage.size).perform();
-        SpendinggoodAddProductPage.size.click();
-        SpendinggoodAddProductPage.price.sendKeys("Large", Keys.ENTER);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.attributes);
+        ReusableMethods.waitFor(2);
+//        actions.moveToElement(SpendinggoodAddProductPage.color).perform();
+//        SpendinggoodAddProductPage.color.click();
+
+
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.color);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.colorButton);
+//        actions.moveToElement(SpendinggoodAddProductPage.colorButton).perform();
+//        SpendinggoodAddProductPage.colorButton.click();
+        SpendinggoodAddProductPage.colorButton.sendKeys("red", Keys.ENTER);
+//        actions.moveToElement(SpendinggoodAddProductPage.size).perform();
+//        SpendinggoodAddProductPage.size.click();
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.size);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.sizeButton);
+        SpendinggoodAddProductPage.sizeButton.sendKeys("Large", Keys.ENTER);
         Driver.closeDriver();
 
 
