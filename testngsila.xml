@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/silar/IdeaProjects/TEAM_16/src/test/java/team_16/tests/us06">
+       <packages>
+           <package name="team_16.tests.us06"></package>
+       </packages>
+    </test>
+</suite>

@@ -25,7 +25,7 @@ public class TC_05 {
         ShoppingCard shoppingCard=new ShoppingCard();
         BillingDetails billingDetails=new BillingDetails();
 
-
+        ReusableMethods.waitFor(2);
         homePage.signIn.click();
 
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("username"));
@@ -33,14 +33,18 @@ public class TC_05 {
         signIn.sigInTus.click();
         ReusableMethods.waitFor(2);
         homePage.searchButonu.sendKeys(ConfigReader.getProperty("urun"), Keys.ENTER);
+        ReusableMethods.waitFor(3);
+        Actions actions=new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.PAGE_DOWN,Keys.PAGE_DOWN).build().perform();
+        ReusableMethods.waitFor(3);
         urunler.apple1.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
         urunler.addToCard.click();
 
         homePage.cart.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
         shoppingCard.viewCartButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
 
         //1-Kullanici PROCEED CHECKOUT butonunu tiklar
         shoppingCard.checkout.click();
@@ -60,6 +64,7 @@ public class TC_05 {
         billingDetails.streetAddress.sendKeys(ConfigReader.getProperty("street_adresss"),Keys.TAB,
                 Keys.TAB,ConfigReader.getProperty("post_code"),Keys.TAB,ConfigReader.getProperty("cityy"),
                 Keys.TAB,Keys.TAB,ConfigReader.getProperty("phonee"));
+        Driver.closeDriver();
 
 
 

@@ -249,7 +249,7 @@ public class Urunler {
 
 
 
-    @FindBy(xpath="(//*[text()='Apple'])[2]")
+    @FindBy(xpath="(//*[@class='woocommerce-loop-product__title'])[8]")
     public WebElement apple1;
 
 
