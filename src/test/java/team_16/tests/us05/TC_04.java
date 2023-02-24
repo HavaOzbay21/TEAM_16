@@ -16,18 +16,20 @@ import team_16.utilities.ReusableMethods;
 import java.io.IOException;
 
 public class TC_04 {
-    HomePage homePage = new HomePage();
-    SignIn signIn = new SignIn();
-    MyAccount myAccount = new MyAccount();
 
-
-    AccountDetallesPage details= new AccountDetallesPage();
-    ComparePage compare1 =new ComparePage();
 
 
     @Test
     public void TC01() throws InterruptedException, IOException {
-        Driver.getDriver().get(ConfigReader.getProperty("Site_url"));
+        HomePage homePage = new HomePage();
+        SignIn signIn = new SignIn();
+        MyAccount myAccount = new MyAccount();
+
+
+        AccountDetallesPage details= new AccountDetallesPage();
+        ComparePage compare1 =new ComparePage();
+        Driver.getDriver().get(ConfigReader.getProperty("site_url"));
+        ReusableMethods.waitFor(3);
 
 
         homePage.signIn.click();
@@ -47,7 +49,7 @@ public class TC_04 {
 
         details.AccountDetails.click();
 
-        details.currentpassworddetails.sendKeys("maria123@", Keys.TAB, "turquaz123@", Keys.TAB, "turquaz123@");
+        details.currentpassworddetails.sendKeys("gloria123@", Keys.TAB, "yagizbaran@123", Keys.TAB, "yagizbaran123@");
 
         ReusableMethods.waitFor(10);
 
@@ -64,6 +66,9 @@ public class TC_04 {
 
         ReusableMethods.scrollIntoViewJS(details.mensajesdechanges);
         ReusableMethods.getScreenshot("EkranGoruntusu");
+        Driver.closeDriver();
+
+
     }
 }
 

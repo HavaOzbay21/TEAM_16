@@ -19,19 +19,20 @@ public class TC_03 {
 
 
 
-    HomePage homePage = new HomePage();
-    SignIn signIn = new SignIn();
-    MyAccount myAccount = new MyAccount();
-    AccountDetallesPage details = new AccountDetallesPage();
-    ComparePage compare1 =new ComparePage();
+
 
     @Test
     public void TCO1() throws IOException {
 
 
+        HomePage homePage = new HomePage();
+        SignIn signIn = new SignIn();
+        MyAccount myAccount = new MyAccount();
+        AccountDetallesPage details = new AccountDetallesPage();
+        ComparePage compare1 =new ComparePage();
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
 
-
+        ReusableMethods.waitFor(5);
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
         signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
@@ -68,6 +69,7 @@ public class TC_03 {
 
         ReusableMethods.scrollIntoViewJS(details.mensajesdechanges);
         ReusableMethods.getScreenshot("EkranGoruntusu");
+        Driver.closeDriver();
     }
 
 
