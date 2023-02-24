@@ -19,9 +19,9 @@ import java.io.IOException;
 public class TC_01 {
 
 
-
-
-
+    @Test
+    public void testName() {
+    }
 
     public void TC01() throws InterruptedException, IOException {
     HomePage homePage = new HomePage();
