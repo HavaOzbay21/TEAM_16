@@ -35,6 +35,7 @@ public class TC_01 {
         ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert myAccount.myAccountSayfasi.isDisplayed();
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.StoreManagerSayfaGorunumu.isDisplayed();
         ReusableMethods.getScreenshotH("Ekran goruntusu");
         ReusableMethods.scrollDownActions();
@@ -46,13 +47,19 @@ public class TC_01 {
         ReusableMethods.scrollDownActions();
         ReusableMethods.waitFor(2);
         ReusableMethods.verifyElementDisplayed(storeManagerPage.InventorySecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.ShippingSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.AttributesSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.LinkedSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.SEOSecenegi.isDisplayed();
         ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.ToptanUrunGostermeAyarlarıSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.AdvancedSecenegi.isDisplayed();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         Driver.closeDriver();
 
     }

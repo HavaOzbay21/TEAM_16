@@ -4,8 +4,68 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd5f282a-8836-40c7-8272-2fe4c79bc805" name="Changes" comment="23">
+    <list default="true" id="3ee74aa8-e6b1-4291-a335-7d8668b221ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ozlem/AccountDetallesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ozlem/ComparePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us05/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us05/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us05/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us07/TC_02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us07/TC_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us07/TC_04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us19/TC_06.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us19/TC_07.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/20230220024345.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/20230220073308.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/20230220073714.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output/Screenshots/20230221064415.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/BillingDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/MyAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/OrdersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/OrdersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/ShippingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/ShippingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/Urunler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/Urunler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/YourOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/pages/YourOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/pages/ozlem/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us05/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us05/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us07/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us07/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_03__3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_03__3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us15/TC_05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us16/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us16/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us19/TC_05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us20/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us20/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/tests/us22/TC_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/tests/us22/TC_01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/team_16/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/team_16/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/BillingDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/BillingDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/MyAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/OrdersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/OrdersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/Urunler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/Urunler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/YourOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/pages/YourOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/pages/ozlem/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us05/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us05/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us07/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us07/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_03__3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_03__3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_05.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us15/TC_05.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us16/TC_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us19/TC_04.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us19/TC_04.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us19/TC_05.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us19/TC_05.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us20/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us20/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/tests/us22/TC_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/tests/us22/TC_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ConfigReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/ConfigReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/team_16/utilities/Driver.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,19 +73,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MB94RXYp2cMU3KMWD2x1YPNsKk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.TC_01.TC01">
+    <configuration name="TC_01.TC01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team_16.tests.us05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team_16.tests.us05" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us05.TC_01" />
+      <option name="METHOD_NAME" value="TC01" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_01.testTC_01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team_16.tests.us15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team_16.tests.us15" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us15.TC_01" />
+      <option name="METHOD_NAME" value="testTC_01" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC_02.TCO1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TEAM_16" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="team_16.tests.us05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="team_16.tests.us05" />
+      <option name="MAIN_CLASS_NAME" value="team_16.tests.us05.TC_02" />
+      <option name="METHOD_NAME" value="TCO1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TC_01.TC01" />
+        <item itemvalue="TestNG.TC_02.TCO1" />
+        <item itemvalue="TestNG.TC_01.testTC_01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ee74aa8-e6b1-4291-a335-7d8668b221ab" name="Changes" comment="" />
+      <created>1677229923459</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677229923459</updated>
+    </task>
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="23" />
-    <option name="LAST_COMMIT_MESSAGE" value="23" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
