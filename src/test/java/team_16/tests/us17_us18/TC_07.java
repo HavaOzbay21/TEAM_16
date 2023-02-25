@@ -1,8 +1,6 @@
-package team_16.tests.us18;
+package team_16.tests.us17_us18;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -14,12 +12,9 @@ import team_16.pages.hacer.imagePage;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
-import java.awt.*;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 
-public class TC_05 {
+public class TC_07 {
 
    SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
    SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
@@ -42,7 +37,9 @@ public class TC_05 {
         SpendinggoodAddProductPage.buttonText.sendKeys("nice", Keys.ENTER);
         SpendinggoodAddProductPage.salePrice.sendKeys("200", Keys.ENTER);
 
+        ReusableMethods.waitFor(5);
         ReusableMethods.clickByJS( SpendinggoodAddProductPage.kucukFoto);
+        ReusableMethods.waitFor(5);
         SpendinggoodAddProductPage.MediaLibrary.click();
         ReusableMethods.waitFor(5);
         ReusableMethods.clickByJS(SpendinggoodAddProductPage.KckResimKolye);
@@ -56,28 +53,26 @@ public class TC_05 {
         ReusableMethods.clickByJS(imagePage.uploadFiles);
 
         ReusableMethods.clickByJS(imagePage.selectFiles);
-//        WebElement selectFiles = Driver.getDriver().findElement(By.xpath("(//button[@class='browser button button-hero'])[3]"));
-//        selectFiles.click();
-//        ReusableMethods.waitFor(3);
-//        ReusableMethods.uploadFilePath("C:\\Users\\Hacer\\Desktop\\iskarpin.jpg");
-//                ReusableMethods.waitFor(5);
-//
-//                ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
+
+       ReusableMethods.waitFor(3);
+       ReusableMethods.uploadFilePath("C:\\Users\\Hacer\\Desktop\\kolye.jpg");
+                ReusableMethods.waitFor(5);
+                ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
 
 
 
-//        ReusableMethods.clickByJS( SpendinggoodAddProductPage.BykResimKolye);
-//        ReusableMethods.waitFor(5);
-//        SpendinggoodAddProductPage.selectButton.click();
-//        ReusableMethods.waitFor(5);
-//
-//        ReusableMethods.clickByJS(SpendinggoodAddProductPage.categories);
-//        ReusableMethods.clickByJS(SpendinggoodAddProductPage.accessoriesButton);
-//        ReusableMethods.clickByJS(SpendinggoodAddProductPage.submitButton);
-//        Assert.assertTrue(SpendinggoodAddProductPage.succesMessage2.isDisplayed());
-//        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.product);
-//        Assert.assertTrue(SpendinggoodAddProductPage.kolyeOnProduct.isDisplayed());
-//        Driver.closeDriver();
+        ReusableMethods.clickByJS( SpendinggoodAddProductPage.BykResimKolye);
+        ReusableMethods.waitFor(5);
+        SpendinggoodAddProductPage.selectButton.click();
+        ReusableMethods.waitFor(5);
+
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.categories);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.accessoriesButton);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.submitButton);
+        Assert.assertTrue(SpendinggoodAddProductPage.succesMessage2.isDisplayed());
+        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.product);
+        Assert.assertTrue(SpendinggoodAddProductPage.kolyeOnProduct.isDisplayed());
+        Driver.closeDriver();
 
 
 

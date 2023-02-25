@@ -1,4 +1,4 @@
-package team_16.tests.us18;
+package team_16.tests.us17_us18;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -11,10 +11,15 @@ import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
 public class TC_01 {
-    SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
-    SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
+
     @Test
     public void TC01() {
+
+        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
+        SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
+
+
+
         ReusableMethods.LoginVendor();
         ReusableMethods. waitFor(5);
         ReusableMethods.goToProduct();

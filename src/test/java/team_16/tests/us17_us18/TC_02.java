@@ -1,6 +1,5 @@
-package team_16.tests.us17;
+package team_16.tests.us17_us18;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -11,11 +10,12 @@ import team_16.pages.hacer.SpendinggoodStoreManagerPage;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
-public class TC_01 {
-   SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
-    SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
+public class TC_02 {
+
     @Test
     public void TC001() {
+        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
+        SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
 
         //variable product secilebilmeli
         ReusableMethods.LoginVendor();

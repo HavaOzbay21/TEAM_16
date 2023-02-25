@@ -95,6 +95,8 @@ public class SpendinggoodAddProductPage{
     public WebElement attributes;
 
 
+
+
     @FindBy(xpath = "(//ul[@class='select2-selection__rendered'])[2]")
     public WebElement colorButton;
 

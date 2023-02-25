@@ -1,4 +1,4 @@
-package team_16.tests.us18;
+package team_16.tests.us17_us18;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -13,7 +13,7 @@ import team_16.utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class TC_02 {
+public class TC_03 {
     SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
     SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
     SpendinggoodMyAccountPage SpendinggoodMyAccountPage=new SpendinggoodMyAccountPage();
