@@ -1,8 +1,10 @@
 package team_16.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import team_16.utilities.Driver;
 
 
@@ -287,6 +289,22 @@ public class HomePage {
 
 
 
+
+
+        @FindBy(xpath = "//*[.='Sign Out']")
+        public WebElement signOut;
+        @FindBy(xpath = "//button[@class='mfp-close']")
+        public WebElement test3;
+        @FindBy(xpath = "//a[@class='btn btn-dark btn-rounded btn-sm add_to_cart alt']")
+        public WebElement addToCart;
+        @FindBy(xpath = "//button[@class='button alt']")
+        public WebElement buttonalt;
+
+        @FindBy(xpath = "//i[@class='fas fa-check']")
+        public WebElement us8ass1;
+
+        @FindBy(xpath = "//span[.='Order number']")
+        public WebElement us8ass2;
 
 
 
