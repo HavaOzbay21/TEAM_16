@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="C:/Users/Dani/IdeaProjects/TEAM_16/src/test/java/team_16/tests/us05_us07(failed)">
     <classes>
       <class name="team_16.tests.us05_us07.US_07TC_04">
@@ -45,4 +46,15 @@
       </class> <!-- team_16.tests.us05_us07.TC_01 -->
     </classes>
   </test> <!-- C:/Users/Dani/IdeaProjects/TEAM_16/src/test/java/team_16/tests/us05_us07(failed) -->
+=======
+  <test thread-count="5" name="C:/Users/sehri/IdeaProjects/SeleniumProject/TEAM_16/src/test/java/team_16/tests/us10_11_12(failed)">
+    <classes>
+      <class name="team_16.tests.us10_11_12.US_12_TC_04">
+        <methods>
+          <include name="TC_04"/>
+        </methods>
+      </class> <!-- team_16.tests.us10_11_12.US_12_TC_04 -->
+    </classes>
+  </test> <!-- C:/Users/sehri/IdeaProjects/SeleniumProject/TEAM_16/src/test/java/team_16/tests/us10_11_12(failed) -->
+>>>>>>> 2b6b95c63c2ac8bcc59420d1bbf9a4e3356209c3
 </suite> <!-- Failed suite [All Test Suite] -->
