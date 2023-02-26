@@ -77,9 +77,10 @@ public class SpendinggoodStoreManagerPage {
 
     @FindBy(xpath = "(//button[.='Upload files'])[2]")
     public WebElement uploadFilesBox;
-    @FindBy(xpath = "(//li[@class='attachment save-ready'])[2]")
+//    @FindBy(xpath = "(//li[@class='attachment save-ready'])[2]")
+//    public WebElement mediaLibrarayPicture;
+    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-2']/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]")
     public WebElement mediaLibrarayPicture;
-
     @FindBy(xpath = "//*[.='Edit Product']")
     public WebElement editProduct;
 
@@ -149,7 +150,8 @@ public class SpendinggoodStoreManagerPage {
     @FindBy(xpath = "(//*[.='Select'])[4]")
     public WebElement selectLocate;
 
-    @FindBy(xpath = "(//li[@data-id='23009'])[2]")
+   // @FindBy(xpath = "(//li[@data-id='23009'])[2]")
+    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-5']/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]")
     public WebElement resim;
 
     @FindBy(xpath = "//input[@data-super_parent='401']")

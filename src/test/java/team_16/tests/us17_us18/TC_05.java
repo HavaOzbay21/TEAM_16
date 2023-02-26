@@ -47,7 +47,7 @@ public class TC_05 {
         SpendinggoodStoreManagerPage.variableProductTitle.sendKeys("Tablet");
         ReusableMethods.waitFor(3);
         Actions actions1 = new Actions(Driver.getDriver());
-        actions.click( SpendinggoodStoreManagerPage.addNewBlockLocate).perform();
+        actions1.click( SpendinggoodStoreManagerPage.addNewBlockLocate).perform();
         ReusableMethods.waitFor(3);
         actions.click(SpendinggoodStoreManagerPage.mediaLibraryLocate).perform();
         ReusableMethods.waitFor(3);
@@ -68,7 +68,7 @@ public class TC_05 {
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.colorAddNewButton);
         ReusableMethods.waitFor(3);
 
-        Driver.getDriver().switchTo().alert().sendKeys("lacivert");
+        Driver.getDriver().switchTo().alert().sendKeys("laciverti");
         ReusableMethods.waitFor(5);
         Driver.getDriver().switchTo().alert().accept();
         ReusableMethods.waitFor(5);
@@ -78,7 +78,7 @@ public class TC_05 {
 
         }
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.sizeBox);
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(5);
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.sizeAddNewButton);
         ReusableMethods.waitFor(5);
         Driver.getDriver().switchTo().alert().sendKeys("10''");

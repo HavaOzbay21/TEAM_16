@@ -21,6 +21,7 @@ public class TC_02 {
         ReusableMethods.LoginVendor();
         ReusableMethods. waitFor(3);
         ReusableMethods.goToProduct();
+        ReusableMethods. waitFor(3);
         Actions actions=new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 

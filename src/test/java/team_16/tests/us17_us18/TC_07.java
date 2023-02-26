@@ -16,18 +16,21 @@ import java.io.IOException;
 
 public class TC_07 {
 
-   SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
-   SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
-   SpendinggoodMyAccountPage SpendinggoodMyAccountPage=new SpendinggoodMyAccountPage();
-   imagePage imagePage=new imagePage();
+
     @Test
     public void TC05() throws IOException {
+        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
+        SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
+        SpendinggoodMyAccountPage SpendinggoodMyAccountPage=new SpendinggoodMyAccountPage();
+        imagePage imagePage=new imagePage();
 
         ReusableMethods.LoginVendor();
         ReusableMethods.waitFor(5);
         ReusableMethods.goToProduct();
+        ReusableMethods.waitFor(2);
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.waitFor(7);
         SpendinggoodStoreManagerPage.simpleProduct.click();
         Select simpleDropdown = new Select(SpendinggoodStoreManagerPage.simpleProduct);
         simpleDropdown.selectByVisibleText("External/Affiliate Product");
@@ -47,31 +50,36 @@ public class TC_07 {
         ReusableMethods.clickByJS(SpendinggoodAddProductPage.addToGallery);
 
         SpendinggoodAddProductPage.buyukFoto.click();
-        ReusableMethods.waitFor(5);
+        ReusableMethods.waitFor(7);
 
 
         ReusableMethods.clickByJS(imagePage.uploadFiles);
+        ReusableMethods.waitFor(7);
 
         ReusableMethods.clickByJS(imagePage.selectFiles);
 
-       ReusableMethods.waitFor(3);
+       ReusableMethods.waitFor(5);
        ReusableMethods.uploadFilePath("C:\\Users\\Hacer\\Desktop\\kolye.jpg");
                 ReusableMethods.waitFor(5);
                 ReusableMethods.clickByJS(SpendinggoodAddProductPage.selectButton);
 
-
-
-        ReusableMethods.clickByJS( SpendinggoodAddProductPage.BykResimKolye);
+                ReusableMethods.clickByJS( SpendinggoodAddProductPage.BykResimKolye);
         ReusableMethods.waitFor(5);
         SpendinggoodAddProductPage.selectButton.click();
         ReusableMethods.waitFor(5);
 
         ReusableMethods.clickByJS(SpendinggoodAddProductPage.categories);
+        ReusableMethods.waitFor(3);
         ReusableMethods.clickByJS(SpendinggoodAddProductPage.accessoriesButton);
+        ReusableMethods.waitFor(3);
         ReusableMethods.clickByJS(SpendinggoodAddProductPage.submitButton);
+        ReusableMethods.waitFor(3);
         Assert.assertTrue(SpendinggoodAddProductPage.succesMessage2.isDisplayed());
+        ReusableMethods.waitFor(3);
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.product);
+        ReusableMethods.waitFor(3);
         Assert.assertTrue(SpendinggoodAddProductPage.kolyeOnProduct.isDisplayed());
+        ReusableMethods.waitFor(3);
         Driver.closeDriver();
 
 

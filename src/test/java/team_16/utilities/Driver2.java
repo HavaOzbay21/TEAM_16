@@ -33,8 +33,8 @@ public class Driver2 {
 //            NOTE: sel 4.5
 //            driver = WebDriverManager.chromedriver().create();
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 
         driver.manage().window().maximize();
         return driver;

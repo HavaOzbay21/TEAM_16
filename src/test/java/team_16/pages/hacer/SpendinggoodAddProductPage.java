@@ -63,7 +63,7 @@ public class SpendinggoodAddProductPage{
 
 
 
-    @FindBy(xpath = "//body/div[@id='__wp-uploader-id-2']/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/ul[1]/li[1]/div[1]/div[1]")
+    @FindBy(xpath = "//li[@aria-label='kolye']")
     public WebElement KckResimKolye;
 
     @FindBy(xpath = "//tbody/tr[1]/td[2]/a[1]/img[1]")

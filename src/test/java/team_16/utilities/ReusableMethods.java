@@ -376,7 +376,8 @@ public static String takeScreenshotOfElementH(WebElement element) throws IOExcep
 //        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
 
 
-        Driver2.getDriver().get(ConfigReader.getProperty("URL"));
+        Driver.getDriver().get(ConfigReader.getProperty("URL"));
+        waitFor(4);
         SpendinggoodHomePage.signIn.click();
         waitFor(3);
         SpendinggoodHomePage.mailKutusu.sendKeys(ConfigReader.getProperty("vendor-email"));
@@ -392,20 +393,21 @@ public static String takeScreenshotOfElementH(WebElement element) throws IOExcep
         SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage = new SpendinggoodStoreManagerPage();
 
 
-        JavascriptExecutor jse = (JavascriptExecutor) Driver2.getDriver();
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        waitFor(3);
 //        jse.executeScript("window.scrollTo(0,document.body.scrollHeight)");
         SpendinggoodHomePage.myAccount.click();
-        waitFor(5);
+        waitFor(7);
         SpendinggoodMyAccountPage.storeManager.click();
-        waitFor(5);
-        Actions actions = new Actions(Driver2.getDriver());
+        waitFor(7);
+        Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        waitFor(5);
+        waitFor(7);
         SpendinggoodStoreManagerPage.product.click();
 
         jse.executeScript("arguments[0].click();", SpendinggoodStoreManagerPage.addNew);
         // SpendinggoodStorePage.addNew.click();
-        waitFor(5);
+        waitFor(7);
 
     }
 

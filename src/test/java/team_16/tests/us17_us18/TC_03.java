@@ -14,17 +14,20 @@ import team_16.utilities.ReusableMethods;
 import java.io.IOException;
 
 public class TC_03 {
-    SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
-    SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
-    SpendinggoodMyAccountPage SpendinggoodMyAccountPage=new SpendinggoodMyAccountPage();
+
     @Test
     public void TC02() throws IOException {
+        SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage=new SpendinggoodStoreManagerPage();
+        SpendinggoodAddProductPage SpendinggoodAddProductPage=new SpendinggoodAddProductPage();
+        SpendinggoodMyAccountPage SpendinggoodMyAccountPage=new SpendinggoodMyAccountPage();
+
         ReusableMethods.LoginVendor();
         ReusableMethods.waitFor(5);
         ReusableMethods.goToProduct();
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        SpendinggoodStoreManagerPage.simpleProduct.click();
+        //SpendinggoodStoreManagerPage.simpleProduct.click();
+        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.simpleProduct);
         Select simpleDropdown = new Select(SpendinggoodStoreManagerPage.simpleProduct);
         simpleDropdown.selectByVisibleText("External/Affiliate Product");
         actions.sendKeys(Keys.PAGE_DOWN).perform();

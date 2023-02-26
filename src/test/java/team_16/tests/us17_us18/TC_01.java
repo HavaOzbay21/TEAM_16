@@ -6,7 +6,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import team_16.pages.hacer.SpendinggoodAddProductPage;
+import team_16.pages.hacer.SpendinggoodHomePage;
 import team_16.pages.hacer.SpendinggoodStoreManagerPage;
+import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
@@ -26,7 +28,9 @@ public class TC_01 {
         Actions actions=new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         SpendinggoodStoreManagerPage.simpleProduct.click();
+        ReusableMethods. waitFor(3);
         Select simpleDropdown=new Select(SpendinggoodStoreManagerPage.simpleProduct);
+        ReusableMethods. waitFor(5);
         simpleDropdown.selectByVisibleText("External/Affiliate Product");
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.waitFor(3);

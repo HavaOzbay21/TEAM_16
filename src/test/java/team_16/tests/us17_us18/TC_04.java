@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import team_16.pages.hacer.SpendinggoodAddProductPage;
 import team_16.pages.hacer.SpendinggoodStoreManagerPage;
+import team_16.pages.hacer.imagePage;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
@@ -19,7 +20,7 @@ public class TC_04 {
     public void TC05() throws IOException {
         SpendinggoodStoreManagerPage SpendinggoodStoreManagerPage  = new SpendinggoodStoreManagerPage();
         SpendinggoodAddProductPage SpendinggoodAddProductPage = new SpendinggoodAddProductPage();
-
+        imagePage imagePage=new imagePage();
 
         //yeni color ve size eklenebilmeli
         //variantsa tiklanarak eklenen attributes gorulmeli
@@ -39,23 +40,41 @@ public class TC_04 {
         ReusableMethods.verifyElementDisplayed(SpendinggoodStoreManagerPage.variableLocated);
         simpleDropdown.selectByVisibleText("Simple Product");
         SpendinggoodStoreManagerPage.productTitleBox.sendKeys("kolye");
-        String uploadFilePath="C:\\Users\\Hacer\\Desktop\\kolye.jpg";
-        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.bigPictureUpLoad);
-        ReusableMethods.waitFor(2);
-        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.selectFilesBox);
-        ReusableMethods.waitFor(2);
-        ReusableMethods.uploadFilePath(uploadFilePath);
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(5);
+
+        actions.moveToElement(SpendinggoodAddProductPage.kucukFoto).perform();
+        SpendinggoodAddProductPage.kucukFoto.click();
+        ReusableMethods.waitFor(5);
+        actions.moveToElement(SpendinggoodAddProductPage.MediaLibrary).perform();
+        SpendinggoodAddProductPage.MediaLibrary.click();
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.KckResimKolye);
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.addToGallery);
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.buyukFoto);
+        ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(SpendinggoodAddProductPage.KckResimKolye);
+//        ReusableMethods.clickByJS(imagePage.uploadFiles);
+//        ReusableMethods.waitFor(5);
+//        ReusableMethods.clickByJS(imagePage.selectFiles);
+//        String uploadFilePath="C:\\Users\\Hacer\\Desktop\\kolye.jpg";
+//        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.bigPictureUpLoad);
+//       ReusableMethods.waitFor(6);
+//        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.selectFilesBox);
+//        ReusableMethods.waitFor(6);
+//        ReusableMethods.uploadFilePath(uploadFilePath);
+        ReusableMethods.waitFor(6);
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.selectBoxEnd);
-        ReusableMethods.waitFor(2);
-        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.smallPictureUpLoad);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.mediaLibrarayPicture);
-        ReusableMethods.waitFor(3);
-        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.addToGalleryEnd);
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(6);
+//        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.smallPictureUpLoad);
+//        ReusableMethods.waitFor(6);
+//        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.mediaLibrarayPicture);
+//        ReusableMethods.waitFor(6);
+//        ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.addToGalleryEnd);
+//        ReusableMethods.waitFor(5);
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.electronicsBox);
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(5);
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.submitButton);
         ReusableMethods.verifyElementDisplayed(SpendinggoodStoreManagerPage.editProduct);
         ReusableMethods.clickByJS(SpendinggoodStoreManagerPage.productButtonEnd);
@@ -65,7 +84,7 @@ public class TC_04 {
 
 
         Select select1 =new Select(SpendinggoodStoreManagerPage.productDropdown);
-        simpleDropdown.selectByVisibleText("External/Affiliate Product");
+        select1.selectByVisibleText("External/Affiliate Product");
         ReusableMethods.scrollIntoViewJS(SpendinggoodStoreManagerPage.toptanUrunGostermeAyarlariLocate);
         ReusableMethods.verifyElementDisplayed(SpendinggoodStoreManagerPage.toptanUrunGostermeAyarlariLocate);
         ReusableMethods.verifyElementDisplayed(SpendinggoodStoreManagerPage.inventoryLocated);
