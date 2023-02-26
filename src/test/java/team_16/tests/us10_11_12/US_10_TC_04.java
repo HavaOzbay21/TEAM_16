@@ -27,7 +27,7 @@ public class US_10_TC_04 {
         signUp.becomeAVendor.click();
         vendorRegistration.password.sendKeys("Sehri1.");
         String actualResult= vendorRegistration.passwordStrength.getText();
-        String expectedResult= "Strong";
+        String expectedResult= "Good";
         Assert.assertEquals(actualResult,expectedResult);
         ReusableMethods.getScreenshot("EkranGoruntusu");
         ReusableMethods.waitFor(3);

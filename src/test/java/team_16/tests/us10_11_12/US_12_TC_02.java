@@ -13,17 +13,18 @@ import team_16.utilities.ReusableMethods;
 import java.io.IOException;
 
 public class US_12_TC_02 {
-    HomePage homePage = new HomePage();
-    SignIn signIn= new SignIn();
-    MyAccount myAccount= new MyAccount();
-
-    Adresses adresses= new Adresses();
-
-    BillingAddress billingAddress= new BillingAddress();
 
 
-    @BeforeTest
-    public void InitTest() {
+    @Test
+    public void TC_02() throws IOException {
+
+        HomePage homePage = new HomePage();
+        SignIn signIn= new SignIn();
+        MyAccount myAccount= new MyAccount();
+        Adresses adresses= new Adresses();
+        BillingAddress billingAddress= new BillingAddress();
+
+
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
         ReusableMethods.waitFor(10);
         ReusableMethods.waitForPageToLoad(50);
@@ -47,11 +48,7 @@ public class US_12_TC_02 {
             adresses.editBillingAddress.click();
         }
         ReusableMethods.waitFor(3);
-    }
 
-
-    @Test
-    public void TC_02() throws IOException {
         billingAddress.firstName.clear();
         billingAddress.firstName.sendKeys(ConfigReader.getProperty("sehri_firstname"));
         billingAddress.lastName.clear();
@@ -79,10 +76,8 @@ public class US_12_TC_02 {
 
         ReusableMethods.scrollIntoViewJS(adresses.alertMessage);
         ReusableMethods.getScreenshot("EkranGoruntusu");
+
+         Driver.closeDriver();
     }
 
-    @AfterTest
-    public void TearDownTest() {
-       // Driver.closeDriver();
-    }
 }

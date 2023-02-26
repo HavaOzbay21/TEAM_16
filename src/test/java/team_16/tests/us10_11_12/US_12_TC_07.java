@@ -10,17 +10,16 @@ import team_16.utilities.ReusableMethods;
 import java.io.IOException;
 
 public class US_12_TC_07 {
-    HomePage homePage = new HomePage();
-    SignIn signIn= new SignIn();
-    MyAccount myAccount= new MyAccount();
-
-    Adresses adresses= new Adresses();
-
-    BillingAddress billingAddress= new BillingAddress();
 
 
     @Test
     public void TC_07() throws IOException {
+        HomePage homePage = new HomePage();
+        SignIn signIn= new SignIn();
+        MyAccount myAccount= new MyAccount();
+        Adresses adresses= new Adresses();
+        BillingAddress billingAddress= new BillingAddress();
+
 
         Driver.getDriver().get(ConfigReader.getProperty("URL"));
         ReusableMethods.waitFor(10);
