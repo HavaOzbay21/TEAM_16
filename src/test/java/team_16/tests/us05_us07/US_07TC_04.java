@@ -1,4 +1,4 @@
-package team_16.tests.us07;
+package team_16.tests.us05_us07;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -17,24 +17,22 @@ import team_16.utilities.ReusableMethods;
 
 import java.util.List;
 
-public class TC_03 {
+public class US_07TC_04 {
 
 
     static List<WebElement> urunler;
 
-
     @Test
     public void TC01() {
-
         HomePage homePage = new HomePage();
         SignIn signIn = new SignIn();
         MyAccount myAccount = new MyAccount();
         AccountDetallesPage details = new AccountDetallesPage();
         ComparePage compare = new ComparePage();
 
+
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
         ReusableMethods.waitFor(5);
-
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
         signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
@@ -59,16 +57,18 @@ public class TC_03 {
             ReusableMethods.waitFor(5);
         }
         ReusableMethods.waitFor(5);
+        ReusableMethods.clickByJS(compare.compareclean);
+        ReusableMethods.waitFor(5);
         ReusableMethods.clickByJS(compare.startcompare);
         ReusableMethods.waitFor(5);
         new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.waitFor(5);
-//        List<WebElement> urunlerincomparesayfasindagorunmesi = Driver.getDriver().findElements(By.xpath("//a[@class='compare btn-product-icon']"));
-//        Assert.assertEquals(compare.compareButonu.getSize()==4);
-//        ReusableMethods.waitFor(5);
+
+        Assert.assertTrue(compare.elemanyok.getText().contains("No products added"));
+        System.out.println(compare.elemanyok.getText());
         Driver.closeDriver();
 
+
     }
-
-
 }
+

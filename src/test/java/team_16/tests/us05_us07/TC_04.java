@@ -1,4 +1,4 @@
-package team_16.tests.us05;
+package team_16.tests.us05_us07;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
@@ -15,24 +15,23 @@ import team_16.utilities.ReusableMethods;
 
 import java.io.IOException;
 
-public class TC_03 {
-
-
+public class TC_04 {
 
 
 
     @Test
-    public void TCO1() throws IOException {
-
-
+    public void TC01() throws InterruptedException, IOException {
         HomePage homePage = new HomePage();
         SignIn signIn = new SignIn();
         MyAccount myAccount = new MyAccount();
-        AccountDetallesPage details = new AccountDetallesPage();
+
+
+        AccountDetallesPage details= new AccountDetallesPage();
         ComparePage compare1 =new ComparePage();
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
+        ReusableMethods.waitFor(3);
 
-        ReusableMethods.waitFor(5);
+
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
         signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
@@ -50,30 +49,31 @@ public class TC_03 {
 
         details.AccountDetails.click();
 
-        new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
-        details.firstnameozlem.clear();
-        details.firstnameozlem.sendKeys("Saniye", Keys.TAB, "Sezici", Keys.TAB, "Saniye", Keys.TAB, "lzmra2021@gmail.com");
+        details.currentpassworddetails.sendKeys("preveze123@", Keys.TAB, "istanbul123@", Keys.TAB, "istanbul123@");
 
         ReusableMethods.waitFor(10);
 
         ReusableMethods.clickByJS(details.Savechanges);
-
-        ReusableMethods.waitFor(5);
-
-        //new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
-        // Assert.assertTrue(details.mensajesdechanges.isDisplayed());
-
-
-        Assert.assertEquals(details.mensajesdechanges.getText(), "Account details changed successfully.");
+        // ReusableMethods.waitFor(3);
+        // Driver.getDriver().navigate().refresh();
         ReusableMethods.waitFor(2);
+        new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
+        //new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
+        // Assert.assertEquals(details.mensajesdechanges.getText(),"Account details changed succesfully.");
+        //Assert.assertTrue(details.mensajesdechanges.isDisplayed());
+        Assert.assertEquals(details.mensajesdechanges.getText(), "Account details changed successfully.");
 
         ReusableMethods.scrollIntoViewJS(details.mensajesdechanges);
+
         ReusableMethods.getScreenshot("EkranGoruntusu");
         Driver.closeDriver();
+
+
     }
-
-
 }
+
+
+
 
 
 
