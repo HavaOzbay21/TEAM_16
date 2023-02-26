@@ -1,4 +1,4 @@
-package team_16.tests.us07;
+package team_16.tests.us05_us07;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -16,8 +16,7 @@ import team_16.utilities.ReusableMethods;
 
 import java.util.List;
 
-public class TC_02 {
-
+public class US_07TC_02 {
 
     static List<WebElement> urunler;
 
@@ -33,7 +32,7 @@ public class TC_02 {
         ReusableMethods.waitFor(5);
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
-        signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
+        signIn.password.sendKeys(ConfigReader.getProperty("password1_ozlem"));
         signIn.signInButton.click();
 
         ComparePage compare1 = new ComparePage();
@@ -80,3 +79,7 @@ public class TC_02 {
 
     }
 }
+
+
+
+

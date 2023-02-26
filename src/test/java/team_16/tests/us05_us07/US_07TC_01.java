@@ -1,15 +1,9 @@
-package team_16.tests.us07;
-
+package team_16.tests.us05_us07;
 
 import org.openqa.selenium.By;
-
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
-
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import team_16.pages.HomePage;
 import team_16.pages.MyAccount;
@@ -22,24 +16,23 @@ import team_16.utilities.ReusableMethods;
 
 import java.util.List;
 
-public class TC_01 {
+public class US_07TC_01 {
 
 
-    HomePage homePage = new HomePage();
-    SignIn signIn = new SignIn();
-    MyAccount myAccount = new MyAccount();
-    AccountDetallesPage details = new AccountDetallesPage();
-    ComparePage compare = new ComparePage();
     static List<WebElement> urunler;
 
     @Test
     public void TC01() {
         Driver.getDriver().get(ConfigReader.getProperty("site_url"));
-
+        HomePage homePage = new HomePage();
+        SignIn signIn = new SignIn();
+        MyAccount myAccount = new MyAccount();
+        AccountDetallesPage details = new AccountDetallesPage();
+        ComparePage compare = new ComparePage();
 
         homePage.signIn.click();
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("email_ozlem"));
-        signIn.password.sendKeys(ConfigReader.getProperty("password_ozlem"));
+        signIn.password.sendKeys(ConfigReader.getProperty("password1_ozlem"));
         signIn.signInButton.click();
 
         ComparePage compare1 = new ComparePage();
@@ -98,31 +91,5 @@ public class TC_01 {
         ReusableMethods.waitFor(10);
         Driver.closeDriver();
 
-
-//
-//       // ReusableMethods.clickByJS(compare.compareclean);
-//
-
-
-//        ReusableMethods.clickByJS(compare.CompareIconu3);
-//        ReusableMethods.waitFor(3);
-//
-//        ReusableMethods.clickByJS(compare.urunsayfasi);
-//        ReusableMethods.clickByJS(compare.CompareIconu4);
-//
-//        ReusableMethods.waitFor(3);
-//        ReusableMethods.clickByJS(compare.CompareIconu5);
-//        ReusableMethods.waitFor(5);
-//        ReusableMethods.clickByJS(compare.CompareIconu6);
-//
-//        ReusableMethods.waitFor(5);
-//        ReusableMethods.clickByJS(compare.startcompare);
-//        ReusableMethods.waitFor(10);
-//        new Actions(Driver.getDriver()).sendKeys(Keys.PAGE_DOWN).perform();
-
-
     }
-
 }
-
-
