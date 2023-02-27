@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/User/Desktop/TEAM_16/src/test/java/team_16/tests/us13">
+        <classes>
+            <class name="team_16.tests.us13.TC_01">
+                <methods>
+                    <include name="TC01"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

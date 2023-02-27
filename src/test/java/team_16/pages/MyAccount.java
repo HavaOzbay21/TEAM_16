@@ -26,6 +26,11 @@ public class MyAccount {
     @FindBy(xpath = "//*[@class=\"icon-box-icon icon-orders\"]")
     public WebElement ordersButtonu1;
 
+    @FindBy(xpath = "(//*[.='Addresses'])[2]") public WebElement Addressbutonu;
+
+    @FindBy(xpath = "(//*[@class=\"edit btn btn-link btn-primary btn-underline mb-4\"])[2]")
+    public WebElement Addbutonu;
+
 
 
 
