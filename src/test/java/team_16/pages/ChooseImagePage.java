@@ -59,4 +59,8 @@ public class ChooseImagePage {
     @FindBy(xpath = "//button[text()='Select']") public WebElement SELECTseciliFotoIcin;
     @FindBy(xpath = "(//button[text()='Add to Gallery'])[2]") public WebElement ADDTOGALLERY;
 
+
+    @FindBy(xpath = "//div[@class='thumbnail']") public WebElement ayakkabifoto;
+    @FindBy(xpath = "(//*[@class=\"thumbnail\"])") public WebElement ayakkabifoto2;
+
 }

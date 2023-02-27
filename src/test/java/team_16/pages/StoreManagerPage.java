@@ -79,4 +79,98 @@ public class StoreManagerPage {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @FindBy(xpath ="//*[text()='Simple Product']")
+
+    public WebElement simpleProduct;
+
+
+    @FindBy(xpath ="//*[text()='Variable Product']")
+
+    public WebElement variableProduct;
+
+    @FindBy(xpath ="//*[text()='Grouped Product']")
+
+    public WebElement groupedProduct;
+
+    @FindBy(xpath ="//*[text()='External/Affiliate Product']")
+
+    public WebElement externalAffiliate;
+
+    @FindBy(xpath ="(//*[@class=\"wcfm-text wcfm_ele wcfm_product_title wcfm_full_ele simple variable external grouped booking\"])")
+
+    public WebElement ProductTittle2;
+
+
+
+    @FindBy(xpath = "//*[@id='gallery_img_gimage_0_display']")
+
+    public WebElement minnakresim;
+
+    @FindBy(xpath ="(//*[@id='attachment-details-caption'])[3]" )
+
+    public WebElement caption;
+
+    @FindBy(xpath = "(//*[@id='attachment-details-alt-text'])[3]")
+
+    public WebElement alt_text;
+
+    @FindBy(xpath = "(//*[@id='attachment-details-description'])[3]")
+
+    public WebElement description;
+
+
+
+
 }
+
+
