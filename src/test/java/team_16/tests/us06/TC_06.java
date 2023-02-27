@@ -23,7 +23,7 @@ public class TC_06 {
         ShoppingCard shoppingCard=new ShoppingCard();
         BillingDetails billingDetails=new BillingDetails();
 
-
+        ReusableMethods.waitFor(2);
         homePage.signIn.click();
 
         signIn.Username_or_email_address.sendKeys(ConfigReader.getProperty("username"));
@@ -31,8 +31,12 @@ public class TC_06 {
         signIn.sigInTus.click();
         ReusableMethods.waitFor(2);
         homePage.searchButonu.sendKeys(ConfigReader.getProperty("urun"), Keys.ENTER);
+        ReusableMethods.waitFor(3);
+        Actions actions1=new Actions(Driver.getDriver());
+        actions1.sendKeys(Keys.PAGE_DOWN,Keys.PAGE_DOWN).build().perform();
+        ReusableMethods.waitFor(3);
         urunler.apple1.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
         urunler.addToCard.click();
 
         homePage.cart.click();
@@ -43,7 +47,7 @@ public class TC_06 {
 
         billingDetails.firstName.sendKeys(ConfigReader.getProperty("first_name"),Keys.TAB,ConfigReader.getProperty("last_name"),
                 Keys.TAB,Keys.TAB);
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
         Select options=new Select(billingDetails.countryRegion);
         options.selectByVisibleText("Germany");
 
@@ -58,7 +62,7 @@ public class TC_06 {
         Actions actions=new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).build().perform();
         Assert.assertTrue(billingDetails.eftButton.isDisplayed());
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
 
         //3-Kullanici Pay at the door secenegini gorur
 
@@ -68,6 +72,7 @@ public class TC_06 {
 
         //4-Kullanici Wire transfer/EFT secenegini secer
         billingDetails.eftButton.click();
+        Driver.closeDriver();
 
 
 

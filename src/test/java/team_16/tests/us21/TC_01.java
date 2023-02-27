@@ -1,6 +1,7 @@
 package team_16.tests.us21;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -38,17 +39,21 @@ public class TC_01 {
 
         //5-Kullanici SIGN IN butonunu tiklar
         signIn.sigInTus.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
 
         //6-Sayfaya giris yaptigini gorur
         Assert.assertTrue(homePage.signOutButton.isDisplayed());
 
         //7-Search alanindan istegidi urunu aratir
         homePage.searchButonu.sendKeys(ConfigReader.getProperty("urun"), Keys.ENTER);
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(3);
 
         //8-aradigi urunu gorur
+        Actions actions=new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.PAGE_DOWN,Keys.PAGE_DOWN).build().perform();
+        ReusableMethods.waitFor(3);
         Assert.assertTrue(urunler.apple1.isDisplayed());
+        Driver.closeDriver();
 
 
 

@@ -28,14 +28,16 @@ public class TC_08 {
         signIn.sigInTus.click();
         ReusableMethods.waitFor(2);
         homePage.searchButonu.sendKeys(ConfigReader.getProperty("urun"), Keys.ENTER);
-        urunler.apple1.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(3);
+        Actions actions=new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.PAGE_DOWN,Keys.PAGE_DOWN).build().perform();
+        ReusableMethods.waitFor(3);
         urunler.addToCard.click();
 
         homePage.cart.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
         shoppingCard.viewCartButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
         shoppingCard.checkout.click();
 
         billingDetails.firstName.sendKeys(ConfigReader.getProperty("first_name"),Keys.TAB,ConfigReader.getProperty("last_name"),
@@ -47,15 +49,17 @@ public class TC_08 {
         billingDetails.streetAddress.sendKeys(ConfigReader.getProperty("street_adresss"),Keys.TAB,
                 Keys.TAB,ConfigReader.getProperty("post_code"),Keys.TAB,ConfigReader.getProperty("cityy"),
                 Keys.TAB,Keys.TAB,ConfigReader.getProperty("phonee"));
+        ReusableMethods.waitFor(2);
 
         billingDetails.enterYourCode.click();
         billingDetails.couponCode.sendKeys(ConfigReader.getProperty("cupon_cod"), Keys.ENTER);
+        ReusableMethods.waitFor(3);
 
-        Actions actions=new Actions(Driver.getDriver());
+        Actions actions1=new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).build().perform();
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(3);
         billingDetails.eftButton.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(3);
 
         //1-Kullanici PLACE ORDER butonunu tiklar
         billingDetails.placeOrderButton.click();
@@ -66,13 +70,14 @@ public class TC_08 {
 
         //3-Kullanici sayfanin altinda bulunan my account butonunu tiklar
         homePage.myAccountSecenegi.click();
-        ReusableMethods.waitFor(1);
+        ReusableMethods.waitFor(2);
 
         //4-Kullanici Dashboard alanindan Orders butonunu tiklar
         myAccount.ordersButton.click();
 
         //5-Kullanici Orders bilgilerini gorur
         Assert.assertTrue(myAccount.ordersYazisi.isDisplayed());
+        Driver.closeDriver();
 
 
 

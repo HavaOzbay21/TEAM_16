@@ -8,9 +8,11 @@ import team_16.utilities.ConfigReader;
 import team_16.utilities.Driver;
 import team_16.utilities.ReusableMethods;
 
+import java.io.IOException;
+
 public class TC_03__3 {
     @Test
-    public void testTC_03_3() {
+    public void testTC_03_3() throws IOException {
         HomePage homePage = new HomePage();
         SignIn signIn = new SignIn();
         MyAccount myAccount = new MyAccount();
@@ -24,8 +26,10 @@ public class TC_03__3 {
         signIn.passwordH.sendKeys(ConfigReader.getProperty("passwordhava") + Keys.ENTER);
         ReusableMethods.waitFor(2);
         homePage.myAccountSecenegi.click();
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert myAccount.myAccountSayfasi.isDisplayed();
         ReusableMethods.clickByJS(myAccount.StoreManagerSecenegi);
+        ReusableMethods.getScreenshotH("Ekran goruntusu");
         assert storeManagerPage.StoreManagerSayfaGorunumu.isDisplayed();
         ReusableMethods.scrollDownActions();
         ReusableMethods.clickByJS(myAccount.ProductSecenegi);
@@ -38,7 +42,7 @@ public class TC_03__3 {
         ReusableMethods.clickByJS(storeManagerPage.ShippingSecenegi);
         shippingPage.WeightKGKutusu.sendKeys("50");
         shippingPage.LenghtCMKutusu.sendKeys("50");
-        shippingPage.WeightKGKutusu.sendKeys("50");
+        shippingPage.WidthCMKutusu.sendKeys("50");
         shippingPage.HeightCMKutusu.sendKeys("50");
         ReusableMethods.scrollDownActions();
         assert shippingPage.ShippingClassDriopdown.isDisplayed();

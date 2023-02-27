@@ -1,5 +1,6 @@
 package team_16.pages;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,7 +11,7 @@ public class Adresses {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy (partialLinkText = "EDIT")
+    @FindBy(partialLinkText = "EDIT")
     public WebElement addBillingAddress;
 
     @FindBy (partialLinkText = "ADD")
